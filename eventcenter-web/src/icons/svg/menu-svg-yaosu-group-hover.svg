@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>治理要素_组织管理hover</title>
+    <g id="治理要素_组织管理hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/导航/组织管理hover">
+            <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="16" height="16"></rect>
+            <path d="M6.73246103,5.61798211 L9.27543899,5.63220215 L11.3486328,10.4891576 L11.3486328,13 L4.65185547,13 L4.65185547,10.3155633 L6.73246103,5.61798211 Z M7.641,7.022 L6.051,10.611 L6.051,11.599 L9.948,11.599 L9.948,10.773 L8.348,7.027 L7.641,7.022 Z" id="三角形" fill="#36A4FF" fill-rule="nonzero"></path>
+            <path d="M11,1 L11,7 L5,7 L5,1 L11,1 Z M9.6,2.4 L6.4,2.4 L6.4,5.6 L9.6,5.6 L9.6,2.4 Z" id="矩形" fill="#36A4FF" fill-rule="nonzero"></path>
+            <path d="M15,10 L15,15 L10,15 L10,10 L15,10 Z M13.6,11.4 L11.4,11.4 L11.4,13.6 L13.6,13.6 L13.6,11.4 Z" id="矩形备份-2" fill="#36A4FF" fill-rule="nonzero"></path>
+            <path d="M6,10 L6,15 L1,15 L1,10 L6,10 Z M4.6,11.4 L2.4,11.4 L2.4,13.6 L4.6,13.6 L4.6,11.4 Z" id="矩形备份" fill="#36A4FF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

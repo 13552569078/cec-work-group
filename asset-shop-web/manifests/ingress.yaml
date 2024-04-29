@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: web-asset-center
+  namespace: {{NAMESPACE}}
+spec:
+  rules:
+    - host: {{INGRESS_ASSETCENTER}}
+      http:
+        paths:
+          - backend:
+              serviceName: web-asset-center
+              servicePort: 80
+            path: /

@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-asset-center
+  namespace: {{NAMESPACE}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-asset-center
+  template:
+    metadata:
+      labels:
+        app: web-asset-center
+    spec:
+      containers:
+        - name: web-asset-center
+          image: {{IMAGE_URL}}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          env:
+            - name: NACOS_ADDR
+              value: nacos:8848
+#            - name: NAME_SPACE
+#              value: 84d8f2c4-0ef3-4645-8c8d-f91fd941c55c
+#            - name: KAFKA_SERVERS
+#              value: kafka-0.kfk-svc-headless:9092,kafka-1.kfk-svc-headless:9092,kafka-2.kfk-svc-headless:9092
+#            - name: NACOS_WEIGHT
+#              value: "1"
+#            - name: LOG_HERE
+#              value: file
+            - name: TZ
+              value: Asia/Shanghai
+          resources:
+            requests:
+              memory: 50Mi
+              cpu: 10m
+            limits:
+              memory: 4096Mi
+              cpu: 4000m
+#          livenessProbe:
+#            httpGet:
+#              path: /
+#              port: 8080
+#              scheme: HTTP
+#            initialDelaySeconds: 120
+#            periodSeconds: 15
+#            timeoutSeconds: 3
+#          readinessProbe:
+#            httpGet:
+#              path: /
+#              port: 8080
+#              scheme: HTTP
+#            initialDelaySeconds: 120
+#            timeoutSeconds: 2
+#            periodSeconds: 15

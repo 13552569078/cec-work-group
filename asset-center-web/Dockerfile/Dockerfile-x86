@@ -1,0 +1,18 @@
+#演示环境   https://fq.cecloud.com/
+#FROM 106.39.185.108:5000/nginx_filebeat_log:1.19.0
+FROM 10.255.144.14:6000/devops/nginx:1.21.6-alpine
+LABEL maintainer="xiajikun"
+#WORKDIR /app
+#ADD ./nginx-config/pkc-cloud-09.conf /etc/nginx/conf.d/
+COPY ./nginx-config/nginx.conf /etc/nginx/nginx.conf
+# 拷贝文件到镜像
+#ADD ./dist /home/pkc/dist
+#RUN chmod 777 /app/start.sh
+ENV NACOS_ADDR nacos:8848
+ENV TZ=Asia/Shanghai
+ENV LANG=en_US.UTF-8
+COPY dist /usr/share/nginx/html/dist
+COPY ./nginx-config/config.js /usr/share/nginx/html/dist/static/config.js
+#导出端口
+EXPOSE 80
+#CMD ./start.sh

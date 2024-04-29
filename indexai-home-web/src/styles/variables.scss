@@ -1,0 +1,91 @@
+// 主题色
+$primary-color: #36a4ff;
+$primary-gradient-color: linear-gradient(90deg, #7ac1ff 0%, #36a4ff 100%);
+$primary-gradient-hover-color: linear-gradient(90deg, #8eccff 0%, #4fafff 100%);
+
+// 功能色
+$error: #ff4d4f;
+$warning: #fa8b16;
+$info: #fecc55;
+$default: #36a4ff;
+$success: #4cc09e;
+$invalid: #a9a9a9;
+
+// 中性色
+$primary-text: #4b4b4b; //正文
+$secondary-text: #8a8a8a; // 次要文字
+$title-text: #202020;
+$table-header-title: #202020; //表头标题
+$placeholder-text: #bdbdbd; //提示文字/icon
+$border-color: #e7e7e7; // 边框
+$line-color: #ededed; // 主要线条
+$icon-disabled-color: #ededed; // icon 禁用
+$disabled-color: #f1f3f8; // 禁用底色
+$hover-color: #f9fafe; // hover底色
+$table-header-background: #f9fafe; // 表头背景色
+
+//补充色盘六色以内(主要用于图表)
+$light-blue: #36a4ff;
+$dark-blue: #2f54ed;
+$orange: #fa8b16;
+$green: #4cc09e;
+$red: #ff4d4f;
+$yellow: #f6bb06;
+
+$fontSizeBase: 14px;
+$white: #fff;
+$disabled: #bdbdbd; //待定
+// content 内容区背景
+$contentBg: #f3f4fb;
+$tipsColor: #36a4ff;
+// font
+$fontColor: #202020;
+//navbar
+$navBg: #ffffff;
+$navFontColor: rgba($fontColor, 0.85);
+$menuBg: #ffffff;
+// searchPanel
+$panelBg: #fafafb;
+$sideBarWidth: 255px;
+$sideBarCollapseWidth: 95px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuBg: $menuBg;
+  sideBarWidth: $sideBarWidth;
+}
+
+%center_middle_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%header_font {
+  font-size: 14px;
+  color: $white;
+  line-height: 22px;
+}
+
+%menu_item_hover {
+  background: rgba(248, 250, 255, 1);
+}
+
+%menu_item_collapse_active {
+  background: #9EAECD;
+  color: $white;
+}
+
+%event_content_flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+%input_placeholder {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon/normal/交集</title>
+    <desc>Created with Sketch.</desc>
+    <g id="分析研判" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-运算组件" transform="translate(-326.000000, -596.000000)" fill="#000000">
+            <g id="icon/normal/交集" transform="translate(325.000000, 595.000000)">
+                <g id="交集">
+                    <rect id="矩形" fill-rule="nonzero" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M10.9568966,5.04310345 L10.9568966,1 L1,1 L1,10.9568966 L5.04310345,10.9568966 L5.04310345,15 L15,15 L15,5.04310345 L10.9568966,5.04310345 Z M1.72413793,10.2327586 L1.72413793,1.72413793 L10.2327586,1.72413793 L10.2327586,5.04310345 L5.04310345,5.04310345 L5.04310345,10.2327586 L1.72413793,10.2327586 Z M14.2758621,14.2758621 L5.76724138,14.2758621 L5.76724138,10.9568966 L10.9568966,10.9568966 L10.9568966,5.76724138 L14.2758621,5.76724138 L14.2758621,14.2758621 Z" id="形状" fill-rule="nonzero" opacity="0.5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

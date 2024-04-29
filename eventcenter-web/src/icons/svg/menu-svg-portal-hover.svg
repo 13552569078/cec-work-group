@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/门户中心hover</title>
+    <g id="icon/门户中心hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="portal-department-o" transform="translate(1.000000, 1.000000)" fill="#36A4FF" fill-rule="nonzero">
+            <path d="M12.8920863,1.00719424 L12.8920863,12.9928058 L1.00719424,12.9928058 L1.00719424,1.00719424 L12.8920863,1.00719424 M13.8992806,0 L0,0 L0,14 L14,14 L14,0 L13.8992806,0 Z" id="形状"></path>
+            <path d="M1,3 L14,3 L14,4.02564103 L1,4.02564103 L1,3 Z M1,5.97435897 L13.1268657,5.97435897 L13.1268657,7 L1,7 L1,5.97435897 Z" id="形状"></path>
+            <path d="M7.97058824,6.3030303 L9,6.3030303 L9,13 L7.97058824,13 L7.97058824,6.3030303 Z M2,0 L3.02941176,0 L3.02941176,3.93939394 L2,3.93939394 L2,0 Z M4.05882353,0 L5.08823529,0 L5.08823529,3.93939394 L4.05882353,3.93939394 L4.05882353,0 Z" id="形状"></path>
+        </g>
+    </g>
+</svg>

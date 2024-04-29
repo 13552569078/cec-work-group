@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 14备份 3</title>
+    <defs>
+        <linearGradient x1="20.8348777%" y1="50%" x2="78.7088381%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#A6F0FF" offset="0%"></stop>
+            <stop stop-color="#169CE7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="20.8348777%" y1="50%" x2="78.7088381%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#A6F0FF" offset="0%"></stop>
+            <stop stop-color="#169CE7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="修改0417" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3-AI-编译器0523" transform="translate(-1332.000000, -283.000000)" fill-rule="nonzero">
+            <g id="编组-3备份" transform="translate(1332.000000, 280.000000)">
+                <g id="编组-14备份-3" transform="translate(9.000000, 11.000000) rotate(-90.000000) translate(-9.000000, -11.000000) translate(1.000000, 2.000000)">
+                    <polygon id="矩形备份-2" fill="url(#linearGradient-1)" transform="translate(8.000000, 6.088235) rotate(-90.000000) translate(-8.000000, -6.088235) " points="14.0882353 -1.91176471 8.40540451 6.08823529 14.0882353 14.0882353 1.91176471 6.08201288"></polygon>
+                    <polygon id="矩形备份-3" fill="url(#linearGradient-2)" transform="translate(7.757576, 14.558824) rotate(-90.000000) translate(-7.757576, -14.558824) " points="11.1987522 10.1951872 7.98671743 14.5588235 11.1987522 18.9224599 4.31639929 14.5554295"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

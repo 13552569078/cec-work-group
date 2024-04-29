@@ -1,0 +1,7 @@
+@use "sass:map";
+
+.#{$layout} {
+  .#{$main}{
+    max-width: 100%;
+  }
+}

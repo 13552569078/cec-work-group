@@ -1,0 +1,40 @@
+.map-mode-switcher {
+  position: absolute;
+  right: calc($float-panel-gap / 1.005);
+  bottom: calc($float-panel-gap-bottom / 1.01);
+  z-index: 999;
+  transition: all 0.2s linear;
+
+  &.lower {
+    bottom: calc($float-panel-gap-bottom-lower / 1.01);
+  }
+
+  width: s(125);
+
+  .button-tab {
+    width: 100%;
+  }
+
+  .button-styled {
+    width: s(125);
+    height: s(32);
+    background: url('@/assets/images/map-mode-switcher/css_sprites.png') 0 s(-39);
+    background-size: cover;
+    text-align: center;
+    line-height: s(33);
+    font-size: s(14);
+    margin-bottom: s(3);
+    cursor: pointer;
+
+    &:hover,
+    &.on {
+      background: url('@/assets/images/map-mode-switcher/css_sprites.png') 0 s(-2);
+      background-size: cover;
+      text-align: center;
+    }
+  }
+
+  &.lower {
+    bottom: $float-panel-gap-bottom-lower;
+  }
+}

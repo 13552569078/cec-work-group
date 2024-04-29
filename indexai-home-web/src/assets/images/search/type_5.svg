@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="26px" viewBox="0 0 62 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 6</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0.644667832%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#03A07C" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#36E4B9" stop-opacity="0.386582168" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="6.10622664e-14%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#36E4B8" offset="0%"></stop>
+            <stop stop-color="#7FFFE9" stop-opacity="0.355523383" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0.644667832%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#62C5FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#62C5FF" stop-opacity="0.386582168" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0.644667832%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#03A07C" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#42FCCE" stop-opacity="0.388849432" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0.644667832%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#62C5FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#62C5FF" stop-opacity="0.388849432" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="6.10622664e-14%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#36E4B8" offset="0%"></stop>
+            <stop stop-color="#8DFFEC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="6.10622664e-14%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#62C5FF" offset="0%"></stop>
+            <stop stop-color="#62C5FF" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-8" points="10.854462 2.72146795e-15 13.3392631 -4.1378113e-14 2.60262426 13.0032119 13.2982902 26 10.8317883 26 0 13.0028703"></polygon>
+        <filter x="-45.0%" y="-23.1%" width="190.0%" height="146.2%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.244016768   0 0 0 0 1   0 0 0 0 0.815399443  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="京智_搜索结果页面" transform="translate(-886.000000, -413.000000)">
+            <g id="编组-7" transform="translate(260.000000, 165.000000)">
+                <g id="编组-5" transform="translate(56.000000, 228.000000)">
+                    <g id="编组-14" transform="translate(570.000000, 20.000000)">
+                        <g id="编组-6" transform="translate(4.000000, 0.000000)">
+                            <g id="编组-10">
+                                <path d="M57.5004164,0.527696527 L57.5004164,25.4907089 L16.0608272,25.4907089 L5.64792983,13.0030303 L16.0609776,0.527696527 L57.5004164,0.527696527 Z" id="矩形" stroke="url(#linearGradient-2)" fill="url(#linearGradient-3)"></path>
+                                <polygon id="矩形" fill="url(#linearGradient-5)" points="28.5405652 1.02769653 57.0004164 1.02769653 57.0004164 24.9907089 28.5405652 24.9907089 18.5447287 13.003191"></polygon>
+                                <path d="M58,0.0292376793 L10.8289733,0.0292376793 L0,13.0028703 L10.8286725,25.9891677 L58,25.9891677 L58,0.0292376793 Z M57.0004164,1.02769653 L57.0004164,24.9907089 L11.2970028,24.9907089 L1.30116635,13.003191 L11.2970028,1.02769653 L57.0004164,1.02769653 Z" id="矩形" fill="url(#linearGradient-7)" fill-rule="nonzero"></path>
+                                <g id="路径" fill-rule="nonzero">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                    <use fill="#62C5FF" xlink:href="#path-8"></use>
+                                </g>
+                            </g>
+                            <text id="指标" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" fill="#FFFFFF">
+                                <tspan x="20" y="18">指标</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

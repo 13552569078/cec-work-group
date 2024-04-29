@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="296px" height="912px" viewBox="0 0 296 912" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>bg备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1.08343889e-12 0 296 0 296 912 1.08343889e-12 912"></polygon>
+    </defs>
+    <g id="资源中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08资源中心-标签管理" transform="translate(-1604.000000, -152.000000)">
+            <g id="bg备份" transform="translate(1604.000000, 152.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="矩形" fill="#F3F4FB" xlink:href="#path-1"></use>
+                <polygon id="矩形" fill="#4E6BE7" mask="url(#mask-2)" points="-1 517 296 687 296 981 -1 801"></polygon>
+                <polygon id="矩形备份-2" fill="#41A1F5" mask="url(#mask-2)" points="-1 605 296 775 296 924 -1 734"></polygon>
+                <polygon id="矩形备份-3" fill="#4E6BE7" mask="url(#mask-2)" points="16 -402 92 -253.351351 93 30 40 16"></polygon>
+                <polygon id="矩形备份-4" fill="#41A1F5" mask="url(#mask-2)" points="-164 -276 109 -127.505017 109 20 -164 -148.294314"></polygon>
+                <polygon id="矩形备份-3" fill="#4E6BE7" mask="url(#mask-2)" points="-44 -376 229 -227.351351 234 27 -44 -94.5585586"></polygon>
+                <polygon id="矩形备份-4" fill="#41A1F5" mask="url(#mask-2)" transform="translate(186.000000, -61.933406) scale(-1, 1) translate(-186.000000, 61.933406) " points="156 -148.866813 216 -121.611906 216 25 156 10"></polygon>
+                <polygon id="矩形" fill-opacity="0.25" fill="#FFFFFF" mask="url(#mask-2)" points="24 -1.31904904e-13 272 -1.31904904e-13 272 912 24 912"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

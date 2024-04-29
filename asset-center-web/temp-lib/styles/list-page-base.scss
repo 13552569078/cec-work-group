@@ -1,0 +1,85 @@
+// 列表页通用样式
+.lp-search-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.c-form--inline .lp-search-form-field.lp-search-form-field {
+  margin-right: 24px;
+}
+.lp-search-form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-right: 24px;
+
+  &::before {
+    //flex: 0 0 60px;
+    //text-align: right;
+    content: attr(label);
+    margin-right: 16px;
+    color: #4B4B4B;
+    font-size: 14px;
+    white-space:nowrap;
+  }
+  &.c-form-item {
+    margin-bottom: 0;
+  }
+  .c-input, .c-select, .c-date-editor--daterange.c-input__inner, .c-date-editor--datetimerange.c-input__inner  {
+    width: 296px;
+  }
+  
+}
+
+.lp-page-content {
+  position: relative;
+  box-sizing: border-box;
+  padding: 16px 20px 76px;
+  height: 100%;
+}
+
+.lp-data-controls {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  justify-content: space-between;
+}
+.lp-data-total {
+  color: #202020;
+  &::before{
+    font-family: 'element-icons';
+    font-size: 14.5px;
+    font-weight: 600;
+    content: "\e778";
+    margin-right: 8px;
+  }
+}
+.lp-data-controls-btn {
+  &>span {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+.lp-icon-btn {
+  font-size: 16px;
+  margin: 0 6px;
+}
+
+
+.lp-page-footer {
+  position: absolute;
+  right: 40px;
+  bottom: 24px;
+}

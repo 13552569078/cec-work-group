@@ -1,0 +1,225 @@
+[{
+        "name": "工作台",
+        "url": "/workbench",
+        "icon": "menu-icon-workbench",
+        "code": "workbench",
+        "title": "工作台",
+        "children": [{
+            "name": "待办事件",
+            "url": "/workbench/todo",
+            "icon": "",
+            "code": "todo",
+            "title": "待办事件",
+            "children": []
+        }, {
+            "name": "经办事件",
+            "url": "/workbench/handle",
+            "icon": "",
+            "code": "handle",
+            "title": "经办事件",
+            "children": []
+        }]
+    }, {
+        "name": "事件管理",
+        "url": "/event",
+        "icon": "menu-icon-event",
+        "code": "event",
+        "title": "事件管理",
+        "children": [{
+                "name": "事件录入",
+                "url": "/event/type-in",
+                "icon": "",
+                "code": "typeIn",
+                "title": "事件录入",
+                "children": []
+            },
+            {
+                "name": "事件审核",
+                "url": "/event/review",
+                "icon": "",
+                "code": "review",
+                "title": "事件审核",
+                "children": []
+            },
+            {
+                "name": "事件调度",
+                "url": "/event/dispatch",
+                "icon": "",
+                "code": "dispatch",
+                "title": "事件调度",
+                "children": []
+            },
+            {
+                "name": "事件处理",
+                "url": "/event/handle",
+                "icon": "",
+                "code": "handle",
+                "title": "事件处理",
+                "children": []
+            },
+            {
+                "name": "事件结案",
+                "url": "/event/settle",
+                "icon": "",
+                "code": "settle",
+                "title": "事件结案",
+                "children": []
+            },
+            {
+                "name": "事件草稿箱",
+                "url": "/event/draft-box",
+                "icon": "",
+                "code": "draftBox",
+                "title": "事件草稿箱",
+                "children": []
+            },
+            {
+                "name": "事件查询",
+                "url": "/event/query",
+                "icon": "",
+                "code": "query",
+                "title": "事件查询",
+                "children": []
+            },
+            {
+                "name": "城管历史事件查询",
+                "url": "/event/cgHistory",
+                "icon": "",
+                "code": "cgHistory",
+                "title": "城管历史事件查询",
+                "children": []
+            },            
+            {
+                "name": "审批管理",
+                "url": "/event/approval",
+                "icon": "",
+                "code": "approval",
+                "title": "审批管理",
+                "children": []
+            }
+        ]
+    },
+    {
+        "name": "督查督办",
+        "url": "/inspector",
+        "icon": "menu-icon-inspector",
+        "code": "inspector",
+        "title": "督查督办",
+        "children": [{
+            "name": "督办单",
+            "url": "/inspector/list",
+            "icon": "",
+            "code": "list",
+            "title": "督办单",
+            "children": []
+        }, {
+            "name": "待反馈督办",
+            "url": "/inspector/feedback",
+            "icon": "",
+            "code": "feedback",
+            "title": "待反馈督办",
+            "children": []
+        }, {
+            "name": "我的督办",
+            "url": "/inspector/settle",
+            "icon": "",
+            "code": "settle",
+            "title": "我的督办",
+            "children": []
+        }, {
+            "name": "督办报告",
+            "url": "/inspector/report",
+            "icon": "",
+            "code": "report",
+            "title": "督办报告",
+            "children": []
+        }]
+    },
+    {
+        "name": "事件分析",
+        "url": "/event-analysis",
+        "icon": "menu-icon-eventAnalysis",
+        "code": "eventAnalysis",
+        "title": "事件分析",
+        "hidden": true
+    },
+    {
+        "name": "策略配置",
+        "url": "/strategy-config",
+        "icon": "menu-icon-strategy-config",
+        "code": "strategyConfig",
+        "title": "策略配置",
+        "children": [{
+            "name": "权责清单",
+            "url": "/strategy-config/accrual-list",
+            "icon": "",
+            "code": "accrualList",
+            "title": "权责清单",
+            "children": []
+        }, {
+            "name": "调度策略",
+            "url": "/strategy-config/setting",
+            "icon": "",
+            "code": "setting",
+            "title": "调度策略",
+            "children": []
+        }, {
+            "name": "事件类型管理",
+            "url": "/strategy-config/event-type",
+            "icon": "",
+            "code": "eventType",
+            "title": "事件类型管理",
+            "children": []
+        }, {
+            "name": "模型管理",
+            "url": "/strategy-config/process-model",
+            "icon": "",
+            "code": "processModel",
+            "title": "模型管理",
+            "children": []
+        }, {
+            "name": "流程管理",
+            "url": "/strategy-config/process-list",
+            "icon": "",
+            "code": "processList",
+            "title": "流程管理",
+            "children": []
+        }, {
+            "name": "数据字典配置",
+            "url": "/strategy-config/dict",
+            "icon": "",
+            "code": "dict",
+            "title": "数据字典配置",
+            "children": []
+        }, {
+            "name": "标准化管理",
+            "url": "/strategy-config/standardized",
+            "icon": "",
+            "code": "dict",
+            "title": "标准化管理",
+            "children": []
+        }]
+    },
+    {
+        "name": "流程配置",
+        "url": "/process",
+        "icon": "menu-icon-strategy-config",
+        "code": "process",
+        "title": "流程配置",
+        "children": [{
+            "name": "模型管理",
+            "url": "/process/process-model",
+            "icon": "",
+            "code": "processModel",
+            "title": "模型管理",
+            "children": []
+        }, {
+            "name": "流程管理",
+            "url": "/process/process-list",
+            "icon": "",
+            "code": "processList",
+            "title": "流程管理",
+            "children": []
+        }]
+    }
+]

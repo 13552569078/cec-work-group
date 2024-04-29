@@ -1,0 +1,102 @@
+.left1 {
+  .card1-wrap {
+    width: calc(var(--xxs) * 123/4);
+    height: calc(var(--xxs) * 52/4);
+    background-image: url('@/assets/images/deyang/center/ysfx-bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #DDF2FF;
+
+    .value {
+      font-family: PangMenZhengDao;
+      color: #FFFFFF;
+      font-size: calc(var(--xxs) * 18/4);
+      background: linear-gradient(360deg, #FFB650 0%, #FFFFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      top: calc(var(--xxs)*(-2))
+    }
+
+    .label {
+      font-size: calc(var(--xxs) * 14/4);
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      color: #DDF2FF;
+      position: relative;
+      top: calc(var(--xxs)*(-3))
+    }
+  }
+
+  .events-type-slider {
+    img {
+      width: calc(var(--xxs) * 29/4);
+      cursor: pointer;
+    }
+
+    .grid-item {
+      width: calc(var(--xxs) * 141/4);
+      height: calc(var(--xxs) * 72/4);
+      background-image: url('@/assets/images/deyang/center/ysfx-bg2.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      &.grid-item-empty{
+        background: transparent
+      }
+      .value {
+        font-family: PangMenZhengDao;
+        color: #FFFFFF;
+        font-size: calc(var(--xxs) * 18/4);
+        background: linear-gradient(180deg, #FFFFFF 0%, #00E6FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .label {
+        font-size: calc(var(--xxs) * 14/4);
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        color: #DDF2FF;
+      }
+    }
+  }
+}
+
+.left2 {
+  .card1-wrap {
+    width: calc(var(--xxs) * 130/4);
+    height: calc(var(--xxs) * 55/4);
+    background-image: url('@/assets/images/deyang/center/ysfx-bg3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #DDF2FF;
+
+    .value {
+      font-family: PangMenZhengDao;
+      color: #FFFFFF;
+      font-size: calc(var(--xxs) * 18/4);
+      background: linear-gradient(180deg, #FFFFFF 0%, #00E6FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      top: calc(var(--xxs)*(-2))
+    }
+
+    .label {
+      font-size: calc(var(--xxs) * 14/4);
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      color: #DDF2FF;
+      position: relative;
+      top: calc(var(--xxs)*(-3))
+    }
+  }
+}
+
+.tabs-wrap {
+  width: calc(var(--xxs) * 200/4);
+}
+.relationship-wrap{
+  height: s(566);
+  width: 100%;
+}

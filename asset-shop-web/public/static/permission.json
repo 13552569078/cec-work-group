@@ -1,0 +1,58 @@
+[
+  {
+    "resourceId": "caidan",
+    "resourceName": "菜单",
+    "resourceType": "menuHead",
+    "menuItems": [
+      {
+        "menuId": "statistics",
+        "menuTitle": "概览",
+        "resourceType": "menu",
+        "subMenus": []
+      },
+      {
+        "menuId": "shopManage",
+        "menuTitle": "运营中心",
+        "resourceType": "menu",
+        "subMenus": []
+      },
+      {
+        "menuId": "packManage",
+        "menuTitle": "资源编目",
+        "resourceType": "menu",
+        "subMenus": []
+      },
+      {
+        "menuId": "mine",
+        "menuTitle": "我的空间",
+        "resourceType": "menu",
+        "subMenus": [
+          {
+            "menuId": "myApproval",
+            "menuTitle": "我的审核",
+            "resourceType": "menu",
+            "subMenus": []
+          },
+          {
+            "menuId": "myPublic",
+            "menuTitle": "我的上架",
+            "resourceType": "menu",
+            "subMenus": []
+          },
+          {
+            "menuId": "myApply",
+            "menuTitle": "我的申请",
+            "resourceType": "menu",
+            "subMenus": []
+          },
+          {
+            "menuId": "myAppraise",
+            "menuTitle": "我的评价",
+            "resourceType": "menu",
+            "subMenus": []
+          }
+        ]
+      }
+    ]
+  }
+]

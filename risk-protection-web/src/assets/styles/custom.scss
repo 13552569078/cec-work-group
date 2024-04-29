@@ -1,0 +1,122 @@
+.hl-header {
+  padding: 0 32px 0 28px;
+  .logo {
+    display: flex !important;
+    padding: 0 !important;
+  }
+  .userinfo {
+    margin-right: 0 !important;
+    .face {
+      width: 32px !important;
+      height: 32px !important;
+    }
+  }
+}
+.user-info-popper {
+  top: 56px !important;
+  right: 15px !important;
+  left: auto !important;
+}
+.user-info-dropdown {
+  width: 248px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .face-big {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+  .username {
+    font-size: 14px;
+    font-family: PingFang SC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #4B4B4B;
+    line-height: 22px;
+  }
+  .orgname {
+    font-size: 12px;
+    font-family: PingFang SC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #8A8A8A;
+    line-height: 20px;
+  }
+  .menu-list {
+    margin-top: 16px;
+    width: 100%;
+    .menu-item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 12px 8px;
+      &:hover {
+        background-color: #F9FAFE;
+      }
+      .txt {
+        font-size: 14px;
+        font-family: PingFang SC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #4B4B4B;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.fx-page-table-v2 {
+  .search-btns-box {
+    .is-disabled {
+      // fix components.scss中 .hl-button.main:disabled覆盖fx-page-table-v2
+      color: var(--text-light) !important;
+    }
+  }
+}
+
+.custom-message-box-width {
+  .hl-panel {
+    width: calc(var(--xxs) * 100);
+  }
+}
+
+.hl-header{
+  background-image:url('../images/nav-bg.png')!important;
+  background-color:#647391!important;
+}
+
+.hb-modeless-dialog {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+
+  .panel-body {
+    overflow: hidden;
+    text-align: center;
+
+    video {
+      // width: 100% !important;
+      height: 50vh;
+    }
+
+    img {
+      max-width: 100% !important;
+      max-height: 100% !important;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+}
+
+.hb-modeless-dialog.fullscreen {
+  .panel-body {
+    video {
+      width: auto !important;
+      height: auto !important;
+    }
+    img {
+      width: auto !important;
+    }
+  }
+}

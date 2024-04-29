@@ -1,0 +1,234 @@
+#app {
+  .el-table {
+    color: $fontColor;
+
+    .table-column-index .cell {
+      color: $fontNormalGrey1;
+      padding-left: 20px;
+    }
+
+    .table-column-action .cell {
+      padding-right: 20px;
+    }
+
+    .cell {
+      line-height: 31px;
+    }
+
+    // 树形图标替换
+    &__expand-icon {
+      transform: rotate(-90deg);
+      color: $disabled;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      font-size: 16px;
+
+      .el-icon-arrow-right::before {
+        content: "\e790";
+      }
+    }
+
+    &__expand-icon--expanded {
+      color: #4b4b4b;
+      transform: rotate(0);
+    }
+
+    // 第一级下拉往前移动，保持名称对齐
+    .el-table__row--level-0 {
+      .el-table__expand-icon {
+        margin-left: -18px;
+      }
+    }
+
+    // 事件类型中，事件小类有背景色
+    &.event-type-table {
+
+      // 事件小类有背景色
+      .el-table__row--level-2 {
+        background-color: #f9fafe;
+      }
+    }
+
+    // 修复数据为空的时候，右侧操作列有空白横线的样式
+    &__fixed-right::before,
+    &__fixed::before {
+      background-color: transparent;
+    }
+  }
+
+  .result {
+    flex: 1; // 如果有兼容问题，再写一个 height: calc()
+    background-color: $white;
+    padding: 0 16px;
+    height: 100%;
+  }
+
+  .action-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .action-divider {
+      width: 0.5px;
+      height: 14px;
+      line-height: 16px;
+      color: #EDEDED;
+      margin: 0 8px;
+    }
+
+    .more-action {
+      margin-left: 8px;
+    }
+  }
+
+  .action-btn {
+    color: $primaryColor;
+    cursor: pointer;
+
+    &.is-disabled {
+      color: $disabled;
+      cursor: not-allowed;
+      // 禁用状态禁止点击，统一添加
+      pointer-events: none;
+    }
+  }
+
+  // 新版按钮通用样式
+  .common-action-btn {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: none;
+    width: auto;
+    padding: 0 8px;
+    font-size: 14px;
+
+    &:not(.el-button--primary) {
+      color: #36a4ff;
+      background: #EBF9FF;
+
+      &:active,
+      &:hover {
+        background: rgba(#EBF9FF, 0.75);
+      }
+    }
+
+    .el-icon-download {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    // icon通用
+    .common-icon {
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-right: 8px;
+    }
+
+    // 新增
+    .custom-add {
+      background-image: url("~@/assets/buttons/add.png");
+    }
+
+    // 批量
+    .custom-batch {
+      background-image: url('~@/assets/buttons/batch.png');
+    }
+
+    // 任务
+    .custom-task {
+      background-image: url('~@/assets/buttons/task.png');
+    }
+
+    // 导出
+    .custom-export {
+      background-image: url('~@/assets/buttons/export.png');
+    }
+
+    // 导入
+    .custom-import {
+      background-image: url('~@/assets/buttons/import.png');
+    }
+
+    // 同步
+    .custom-async {
+      background-image: url('~@/assets/buttons/async.png');
+    }
+
+    // 全选
+    .custom-isAll {
+      color: #36a4ff;
+
+      .el-checkbox__label {
+        padding-left: 8px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+    }
+
+  }
+}
+
+// 次要按钮
+.secondary-action-btn {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  border: none;
+  width: auto;
+  padding: 0 8px;
+  font-size: 14px;
+  background: #EBF9FF;
+  color: #36A4FF;
+
+  // icon通用
+  .common-icon {
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right: 8px;
+  }
+
+  &.el-button--primary:hover {
+    background: rgb(222 245 255 / 95%) !important;
+    color: #36A4FF !important;
+  }
+}
+
+.table-popper {
+  padding: 4px 12px;
+
+  .el-button {
+    padding: 8px 0;
+    margin-left: 8px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+.icon-info {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.primary-text {
+  color: #00B2FF;
+
+  &:hover {
+    color: #00B2FF !important;
+  }
+}

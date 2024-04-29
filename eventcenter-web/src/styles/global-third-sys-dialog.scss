@@ -1,0 +1,19 @@
+// 弹窗部分
+::v-deep {
+  .el-dialog {
+   .el-dialog__header {
+      // padding: 20px 28px 20px 28px;
+      line-height: 24px !important;
+      font-size: 16px;
+      color: #4b4b4b;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 500;
+    }
+     .el-dialog__body {
+      padding: 0 28px !important;
+    }
+     .el-dialog__footer {
+      padding: 32px 28px 28px!important;
+    }
+  }
+}

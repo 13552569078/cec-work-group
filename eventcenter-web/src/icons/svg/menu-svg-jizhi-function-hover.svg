@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/导航/职能管理b</title>
+    <g id="icon/导航/职能管理b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="16" height="16"></rect>
+        <g id="quanzeguanli" transform="translate(1.000000, 0.000000)" fill="#36A4FF" fill-rule="nonzero">
+            <path d="M7,0 L14,4.03846154 L14,12.1153846 L7,16.1538462 L-1.51434421e-13,12.1153846 L-1.52322599e-13,4.03846154 L7,0 Z M1,5.52151422 L1,11.4474725 L1.12544314,11.6492308 L6.39342656,14.6787602 L6.39342656,8.68464466 L1,5.52151422 Z M12.84396,5.73224587 L8.00477505,8.52850962 L8.00477505,14.1045536 L12.7225515,11.3814766 L12.84396,11.1797184 L12.84396,5.73224587 Z" id="形状"></path>
+            <polygon id="路径" points="7.07771548 1.61400413 7.31129489 1.61400413 12.0369893 4.33839972 7.19846416 7.12609203 2.35993898 4.33839972"></polygon>
+        </g>
+    </g>
+</svg>

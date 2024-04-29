@@ -1,0 +1,22 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+tests/**/coverage/
+
+# Editor directories and files
+.idea
+#.vscode # add default setting
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+dispatch-web/
+.history/
+src/setting.js
+src/vue.config.js
+.vscode

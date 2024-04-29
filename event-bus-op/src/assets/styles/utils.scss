@@ -1,0 +1,3 @@
+@function s($size) {
+  @return calc(var(--xxs) * $size / 4);
+}

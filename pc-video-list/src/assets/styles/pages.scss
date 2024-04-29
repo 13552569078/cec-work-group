@@ -1,0 +1,76 @@
+// $layoutHeaderHeight: 64px; // 头部高度
+// $layoutSubHeaderHeight: 54px;
+
+$layoutHeaderHeight: 0px; // 头部高度
+$layoutSubHeaderHeight: 0px;
+
+
+:root {
+  --factor-bg-color: #F5F8FA;
+}
+
+html {
+  font-variant-numeric: tabular-nums;
+}
+
+body {
+  min-height: 100vh;
+  background: #eaf1f7 !important;
+}
+
+#app {
+  min-height: inherit;
+}
+
+.page-scrollbar {
+  height: calc(100vh - #{size($layoutHeaderHeight + $layoutSubHeaderHeight)});
+  width: 100%;
+}
+
+.hl-layout .hl-main {
+  min-height: calc(100vh - #{size($layoutHeaderHeight + $layoutSubHeaderHeight)});
+  padding: calc(var(--xl));
+  background: #eaf1f7;
+}
+
+.auto-height {
+  min-height: calc(100vh - (var(--layout-header-height) + var(--layout-sub-header-height) + var(--layout-footer-height)));
+}
+
+.divider {
+  border-color: #f2f2f2 !important;
+  &.verticle {
+    border-right: 1px solid;
+    height: auto;
+    margin: 0 size(10px);
+    width: 1px;
+  }
+  &.horizon {
+    border-bottom: 1px solid;
+    height: 1px;
+    width: 100%;
+    padding: size(10px) 0;
+  }
+}
+
+.border-line {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.flex-no-grow {
+  flex-grow: 0 !important;
+}
+
+.list-page_header {
+  margin-bottom: 0 !important;
+}
+
+.panel-body{
+  height: 100%;
+  .fx-page-table-v2{
+    height: 100%;
+  }
+  .full-body{
+    height: 100%;
+  }
+}

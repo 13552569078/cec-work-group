@@ -1,0 +1,248 @@
+[
+  {
+    "name": "问政",
+    "url": "/intelligent-services",
+    "path": "/intelligent-services",
+    "icon": "menu-icon-intelligent1",
+    "iconActive": "menu-icon-intelligent1-active",
+    "alias": "knowledge1",
+    "title": "问政",
+    "children": [
+      {
+        "name": "对话",
+        "url": "/intelligent-services/wenzhengassistant",
+        "path": "/intelligent-services/wenzhnegassistant",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge1",
+        "title": "对话",
+        "api": {
+          "svc": "wenzheng",
+          "section": "assistant"
+        }
+      }
+    ]
+  },
+  {
+    "name": "看数",
+    "url": "/intelligent-kanshu",
+    "path": "/intelligent-kanshu",
+    "icon": "menu-icon-intelligent2",
+    "iconActive": "menu-icon-intelligent2-active",
+    "alias": "knowledge1",
+    "title": "看数",
+    "children": [
+      {
+        "name": "对话2",
+        "url": "/intelligent-kanshu/kanshujingji",
+        "path": "/intelligent-kanshu/kanshujingji",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge1",
+        "title": "对话",
+
+        "api": {
+          "svc": "kanshu",
+          "section": "jingji"
+        }
+      }
+    ]
+  },
+  {
+    "name": "智能应用中心",
+    "url": "/intelligent-cent",
+    "path": "/intelligent-cent",
+    "icon": "menu-icon-intelligent3",
+    "iconActive": "menu-icon-intelligent3-active",
+    "alias": "knowledge1",
+    "title": "智能应用中心",
+    "children": [
+      {
+        "name": "智能应用超市",
+        "url": "/intelligent-services/knowledge-chaoshi",
+        "path": "/intelligent-services/knowledge-maotchaoshiiao",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge123",
+        "title": "智能应用超市"
+      },
+      {
+        "name": "我的申请",
+        "url": "/intelligent-services/wodeshenqing",
+        "path": "/intelligent-services/wodeshenqing",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge3",
+        "title": "我的申请"
+      },
+      {
+        "name": "文档下载",
+        "url": "/intelligent-services/docdld",
+        "path": "/intelligent-services/docdld",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge4",
+        "title": "文档下载"
+      },
+      {
+        "name": "支持与服务",
+        "url": "/intelligent-services/docsddld",
+        "path": "/intelligent-services/dodscdld",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge4",
+        "title": "支持与服务"
+      }
+    ]
+  },
+  {
+    "name": "知识管理",
+    "url": "/knowledge-management",
+    "path": "/knowledge-management",
+    "icon": "menu-icon-intelligent4",
+    "iconActive": "menu-icon-intelligent4-active",
+    "alias": "knowledge21",
+    "title": "知识管理",
+    "children": [
+      {
+        "name": "知识工作台",
+        "url": "/knowledge-management/knowledge-workbench",
+        "path": "/knowledge-management/knowledge-workbench",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge3",
+        "title": "知识工作台"
+      },
+      {
+        "name": "知识中心",
+        "url": "/knowledge-management/kcent",
+        "path": "/knowledge-management/dkcent",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge4",
+        "title": "知识中心"
+      }
+    ]
+  },
+  {
+    "name": "知识仓库",
+    "url": "/knowledge-managementdb",
+    "path": "/knowledge-managementdb",
+    "icon": "menu-icon-intelligent4",
+    "iconActive": "menu-icon-intelligent4-active",
+    "alias": "knowledge31x",
+    "title": "知识仓库",
+    "children": [
+      {
+        "name": "事件处置类知识管理",
+        "url": "/knowledge-managementdb/general",
+        "path": "/knowledge-managementdb/general",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge32",
+        "title": "事件处置类知识管理"
+      },
+      {
+        "name": "事项说明类知识管理",
+        "url": "/knowledge-managementdb/special",
+        "path": "/knowledge-managementdb/special",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge34",
+        "title": "事项说明类知识管理"
+      },
+      {
+        "name": "指标类知识管理",
+        "url": "/knowledge-managementdb/evenwert",
+        "path": "/knowledge-managementdb/evenwet",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge35",
+        "title": "指标类知识管理"
+      },
+      {
+        "name": "权责类知识管理",
+        "url": "/knowledge-managementdb/Q&wqwer",
+        "path": "/knowledge-managementdb/Q&qwe",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge36",
+        "title": "权责类知识管理"
+      },
+      {
+        "name": "问答类知识管理",
+        "url": "/knowledge-managementdb/evesdnt",
+        "path": "/knowledge-managementdb/evsdsent",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge35",
+        "title": "问答类知识管理"
+      },
+      {
+        "name": "文档类知识管理",
+        "url": "/knowledge-managementdb/Q&A",
+        "path": "/knowledge-managementdb/Q&A",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge36",
+        "title": "文档类知识管理"
+      },
+      {
+        "name": "提示词管理",
+        "url": "/knowledge-managementdb/evesdant",
+        "path": "/knowledge-managementdb/evesdnt",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge35",
+        "title": "提示词管理"
+      },
+      {
+        "name": "图片类知识管理",
+        "url": "/knowledge-managementdb/Q&asdA",
+        "path": "/knowledge-managementdb/Qsad&A",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge36",
+        "title": "图片类知识管理"
+      },
+      {
+        "name": "其他知识管理",
+        "url": "/knowledge-managementdb/documsdent",
+        "path": "/knowledge-managementdb/documasdent",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge33",
+        "title": "其他知识管理"
+      }
+    ]
+  },
+  {
+    "name": "知识绩效",
+    "url": "/knowledge-management/knowledge-perations",
+    "path": "/knowledge-management/iknowledge-perations",
+    "icon": "menu-icon-intelligent5",
+    "iconActive": "menu-icon-intelligent5-active",
+    "alias": "knowledge41",
+    "title": "知识绩效",
+    "children": [
+      {
+        "name": "个人绩效",
+        "url": "/knowledge-management/knowledge-perations/general",
+        "path": "/knowledge-management/knowledge-perations/general",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge32",
+        "title": "个人绩效"
+      },
+      {
+        "name": "部门绩效",
+        "url": "/knowledge-management/knowledge-perations/special",
+        "path": "/knowledge-management/knowledge-perations/special",
+        "icon": "",
+        "iconActive": "",
+        "alias": "knowledge34",
+        "title": "部门绩效"
+      }
+    ]
+  }
+]

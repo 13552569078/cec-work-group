@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1923px" height="1080px" viewBox="0 0 1923 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 7</title>
+    <defs>
+        <linearGradient x1="100%" y1="48.7767217%" x2="-1.87350135e-14%" y2="48.7767217%" id="linearGradient-1">
+            <stop stop-color="#01203D" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#01203D" stop-opacity="0.554660184" offset="5.01349799%"></stop>
+            <stop stop-color="#01203D" stop-opacity="0.92" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="98.7767217%" x2="50%" y2="-1.22327826%" id="linearGradient-2">
+            <stop stop-color="#01203D" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#01203D" stop-opacity="0.835637019" offset="37.3984974%"></stop>
+            <stop stop-color="#01203D" stop-opacity="0.92" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="98.7767217%" x2="50%" y2="-1.22327826%" id="linearGradient-3">
+            <stop stop-color="#01203D" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#01203D" stop-opacity="0" offset="37.3984974%"></stop>
+            <stop stop-color="#01203D" stop-opacity="0.92" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="平时" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)" id="bg">
+            <g transform="translate(-657.000000, -211.000000)">
+                <g id="编组-43" transform="translate(656.000000, 211.000000)">
+                    <g id="编组-7" transform="translate(0.888889, 0.000000)">
+                        <rect id="矩形" fill="url(#linearGradient-1)" x="0.111111111" y="0" width="515" height="1082"></rect>
+                        <rect id="矩形" fill="url(#linearGradient-1)" transform="translate(1664.611111, 541.000000) scale(-1, 1) translate(-1664.611111, -541.000000) " x="1407.11111" y="0" width="515" height="1082"></rect>
+                        <rect id="矩形" fill="url(#linearGradient-2)" transform="translate(961.111111, 77.000000) scale(-1, 1) translate(-961.111111, -77.000000) " x="0.111111111" y="0" width="1922" height="154"></rect>
+                        <rect id="矩形" fill="url(#linearGradient-3)" transform="translate(961.111111, 1035.000000) scale(-1, -1) translate(-961.111111, -1035.000000) " x="0.111111111" y="990" width="1922" height="90"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

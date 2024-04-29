@@ -1,0 +1,213 @@
+// 样式总入口
+@import '~@l/styles/iconfont/iconfont.css';
+@import './variables.scss';
+@import './cestc-ioc-ui-index.scss';
+@import './cestc-ioc-ui-cover.scss';
+
+body {
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: PingFang SC;
+}
+.ftm500 {
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 文字连接禁用时灰色
+.c-link.c-link--primary.is-disabled {
+  color: #bdbdbd;
+}
+
+
+// 发布版本 按钮上部分提示
+.dailog_footer-warn-info {
+  position: absolute;
+  right: 0;
+  top: -24px;
+  font-size: 14px;
+  color: #4B4B4B;
+  display: flex;
+  align-items: center;
+  i {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+  }
+}
+
+// 提示icon
+.cls-icon-info{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(~@/assets/imgs/icon-info.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.info-title {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #202020;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  &::before {
+    display: block;
+    content: '';
+    width: 5px;
+    height: 18px;
+    background: $primaryColor;
+    // background: url(~@/assets/imgs/title.png) no-repeat center;
+    // background-size: 100%;
+    margin-right: 15px;
+  }
+}
+.box-wrap {
+  background: #FFFFFF;
+  margin-top: 20px;
+  padding: 20px 40px;
+  .info-title {
+    margin-left: -20px;
+  }
+}
+.toolbar-box.c-dropdown-menu.c-popper {
+  padding: 0 0 8px 0;
+  border: 1px solid #FFFFFF;
+  background: linear-gradient(180deg, #F3F5F8 0%, #FDFDFE 100%);
+  box-shadow: 2px 3px 8px 0px rgba(232,237,245,0.6);
+  border-radius: 2px;
+  .c-dropdown-menu__item {
+    padding: 0 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #8A8A8A;
+    cursor: pointer;
+    &:hover {
+      background: rgba(255,255,255,0);
+      color: $primaryColor;
+    }
+  }
+  .popper__arrow, .popper__arrow::after {
+    border-bottom-color: transparent;
+  }
+}
+.page-top-dropdown.c-tooltip__popper {
+  margin-top: 20px;
+  padding: 0 0 8px 0;
+  .page-top-dropdown-item {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    color: #8A8A8A;
+    cursor: pointer;
+    &:hover, &.active {
+      background: rgba(255,255,255,0);
+      color: $primaryColor;
+    }
+  }
+}
+.c-tooltip__popper.is-dark {
+  border: 1px solid #FFFFFF;
+  background: linear-gradient(180deg, #F3F5F8 0%, #FDFDFE 100%);
+  border-radius: 2px;
+}
+// 表单内 资源编码 右侧小问号提示信息
+.c-tooltip__popper.cls-form-label-tip {
+  max-width: 500px;
+
+  .c-tooltip__popper-content {
+    max-height: 150px;
+    overflow-y: auto !important;
+    -webkit-line-clamp: 400 !important;
+    text-overflow: clip !important;
+  }
+}
+.c-select-dropdown.c-popper {
+  .c-scrollbar__wrap {
+    max-height: 400px !important;
+    overflow: auto !important;
+  }
+}
+.c-select-dropdown.c-popper.select-popper-max-limit {
+  .c-scrollbar__wrap {
+    max-height: 300px !important;
+    overflow: auto !important;
+  }
+}
+.icon-asset-flow {
+  background-color: #EBF9FF;
+  background-image: url(~@/assets/imgs/asset-flow.svg);
+}
+.icon-asset-object {
+  background-color: #ECFAF8;
+  background-image: url(~@/assets/imgs/asset-object.svg);
+}
+.icon-asset-kpi {
+  background-color: #EBF9FF;
+  background-image: url(~@/assets/imgs/asset-kpi.svg);
+}
+.icon-asset-api {
+  background-color: #ECFAF8;
+  background-image: url(~@/assets/imgs/asset-api.svg);
+}
+.icon-asset-page {
+  background-color: #FFF0ED;
+  background-image: url(~@/assets/imgs/asset-page.svg);
+}
+.icon-asset-script {
+  background-color: #FFF7E8;
+  background-image: url(~@/assets/imgs/asset-script.svg);
+}
+.icon-asset-supportapp {
+  background-color: #FFF7E8;
+  background-image: url(~@/assets/imgs/asset-supportapp.svg);
+}
+.icon-asset-model {
+  background-color: #EBF9FF;
+  background-image: url(~@/assets/imgs/asset-model.svg);
+}
+.icon-asset-app {
+  background-color: #FFF7E8;
+  background-image: url(~@/assets/imgs/asset-app.svg);
+}
+.icon-asset-tz {
+  background-color: #ECEEFD;
+  background-image: url(~@/assets/imgs/asset-tz.svg);
+}
+.btn-radio {
+  display: flex;
+  cursor: pointer;
+  .btn-radio-item {
+    padding: 0 9px;
+    // width: 104px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #E7E7E7;
+    text-align: center;
+    &:first-child {
+      border-radius: 2px 0px 0px 2px;
+      border-right-color: transparent;
+    }
+    &:last-child {
+      border-left-color: transparent;
+      border-radius: 0px 2px 2px 0px;
+    }
+    &:hover, &.active {
+      color: #36A4FF;
+    }
+  }
+  .active {
+    border-color: #36A4FF !important;
+  }
+}

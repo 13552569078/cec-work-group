@@ -1,0 +1,856 @@
+@import "./variables.scss";
+
+.confirm-title {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.confirm-subtitle {
+  font-size: 12px;
+  margin-top: 4px !important;
+
+  .num {
+    color: $primaryColor;
+  }
+}
+
+// 二级样式
+.table-expand-own {
+  .c-table__expanded-cell {
+    padding: 0;
+  }
+
+  .c-tabs--border-card {
+    box-shadow: none;
+    background: #F6F9FB;
+    padding: 0px 87px 0px 87px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    border: 0;
+
+    .c-tabs__content {
+      padding: 15px 23px;
+    }
+
+    .alert-box {
+      display: flex;
+      width: 12px;
+      margin-right: 4px;
+    }
+
+    .icon-operate {
+      margin-right: 0px;
+      padding-right: 24px;
+      border-right: 1px solid #CACFD6;
+    }
+
+    .check-box {
+      display: flex;
+      align-items: center;
+      margin: 12px 24px 12px 0;
+    }
+
+    .icon-alert {
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+    }
+
+    .name {
+      width: 138px;
+      display: inline-block;
+      margin-right: 16px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap; //
+    }
+
+
+  }
+  .icon-alert-update {
+    background: url(~@/assets/imgs/icon-status-update.svg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  }
+
+  .icon-alert-invalid {
+    background: url(~@/assets/imgs/icon-status-invalid.svg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+//一级警告样式
+.alert-update {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: ' ';
+    background: url(~@/assets/imgs/icon-status-update.svg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  }
+
+  &::after {
+    content: "升级";
+    color: #36A4FF;
+    font-size: 14px;
+    margin-left: 4px;
+  }
+}
+
+.alert-invalid {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: ' ';
+    background: url(~@/assets/imgs/icon-status-invalid.svg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    font-weight: 400;
+  }
+  &::after {
+    content: "失效";
+    color: #FF4D4F;
+    font-size: 14px;
+    margin-left: 4px;
+    font-weight: 400;
+  }
+}
+
+.tab-list-own {
+  background: transparent;
+  padding: 6px 0px 0px;
+  ;
+
+
+  .c-tabs__nav {
+    margin-left: 6px;
+  }
+
+  .c-tabs__header {
+    margin: 0;
+  }
+
+  .c-tabs__nav {
+    display: flex;
+    justify-items: center;
+  }
+
+  .c-tabs__active-bar {
+    display: none !important;
+    width: 0px !important;
+    height: 0px;
+    background: transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid #36A4FF;
+    border-left: 7px solid transparent;
+    border-top: 0px solid transparent;
+    left: 50%;
+    transform: translateX(-7px) !important;
+  }
+
+  .c-tabs__item {
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #8A8A8A;
+    line-height: 28px !important;
+  }
+
+  .c-tabs__item.is-active {
+    font-weight: 500;
+    color: #4B4B4B;
+    font-size: 20px;
+    line-height: 28px !important;
+    position: relative;
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      width: 0px !important;
+      height: 0px;
+      background: transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 8px solid #36A4FF;
+      border-left: 7px solid transparent;
+      border-top: 0px solid transparent;
+      left: 50%;
+      bottom: 4px;
+      transform: translateX(-7px) !important;
+    }
+  }
+
+  .c-tabs__content {
+    padding-top: 0px;
+  }
+
+  .c-tabs__nav-wrap::after {
+    height: 0;
+  }
+
+  .c-tabs__item {
+    padding: 0 16px !important;
+  }
+
+}
+
+.tab-list-little {
+  .c-menu.c-menu--horizontal {
+    border-bottom: 0px solid;
+  }
+
+  .c-menu-item {
+    padding: 0 0px;
+    margin-right: 24px;
+  }
+
+  .c-submenu__title {
+    padding: 0px;
+    margin-right: 24px;
+  }
+
+  .c-menu.c-menu--horizontal {
+    border-bottom: solid 0px #e6e6e6;
+  }
+}
+
+  .creator-info {
+    background: #fff;
+    // margin-bottom: 20px;
+    .creator-bg{
+      height: 86px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+    .img-box {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+        background: rgba(212, 235, 255, 0.5);
+        border-radius: 8px;
+        margin-right: 16px;
+      }
+      .info {
+        .title {
+          display: block;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #8A8A8A;
+          line-height: 22px;
+        }
+        .name {
+          line-height: 24px;
+          display: block;
+          font-size: 16px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #4b4b4b;
+        }
+      }
+    }
+    .time-box {
+      margin-left: 32px;
+      .title {
+        display: block;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #8A8A8A;
+      }
+      .time {
+        display: block;
+        line-height: 22px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #4b4b4b;
+      }
+    }
+  }
+
+//需要保留的组件库没有的组合样式
+.tree-tooltip {
+  &.c-tooltip__popper {
+    padding: 0;
+
+    .tree-btn {
+      cursor: pointer;
+      width: 60px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+        0px -6px 16px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+      color: rgba(64, 64, 64, 1);
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px 0;
+
+      .item {
+        display: flex;
+        height: 39px;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: rgba(244, 245, 252, 1);
+          color: $primaryColor;
+        }
+      }
+
+      &.dark {
+        background: #07172d;
+        border: 1px solid rgba(125, 144, 186, 0.35);
+        color: #ffffff;
+
+        .item {
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &.c-tooltip__popper {
+    &.is-light {
+      border-color: #fff;
+    }
+  }
+
+  &.c-tooltip__popper {
+    &.is-light {
+      .popper__arrow {
+        border-bottom-color: #fff !important;
+      }
+    }
+
+    &.is-dark {
+      .popper__arrow {
+        border-bottom-color: #07172D !important;
+        // border-top-color:#07172D !important ;
+        margin-top: 1px;
+
+        &::after {
+          // border-top-color:#07172D !important ;
+          border-bottom-color: #07172D !important;
+        }
+      }
+    }
+  }
+}
+
+// .c-tree
+//   .is-current
+//   > .c-tree-node__content
+//   > .custom-tree-node
+//   > .left-node
+//   > .c-tooltip {
+//   color: $primaryColor;
+//   font-weight: 500;
+// }
+
+//翻页符号相距24px
+.c-pagination {
+  position: relative;
+  padding-right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  &.is-background {
+    .c-pager li {
+      border: none !important;
+    }
+    .btn-prev:disabled, .btn-next:disabled {
+      background: #F1F3F8;
+    }
+  }
+  .c-pagination__editor.c-input {
+    width: 32px;
+  }
+}
+
+.c-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.c-upload__input {
+  display: none;
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.c-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// dropdown
+.c-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+.c-scrollbar__wrap {
+  overflow: auto;
+}
+
+.colord9 {
+  color: #d9d9d9 !important;
+}
+
+.disabled {
+  color: #9b9b9b !important;
+  cursor: no-drop !important;
+}
+
+.primaryColor {
+  color: $primaryColor;
+}
+
+.c-pager {
+  .active {
+    background-color: $primaryColor !important;
+  }
+}
+
+.c-button--upload.is-disabled,
+.c-button--upload.is-disabled:hover {
+  color: $primaryColor;
+  background-color: #f2f3f8;
+  border-color: #f2f3f8;
+}
+
+.c-form-item__label {
+  line-height: 32px;
+  color: #404040;
+}
+
+.c-form-item {
+  margin-bottom: 20px;
+}
+
+.c-form-item__content {
+  line-height: 32px;
+}
+
+.c-table th {
+  background-color: #f9fafe;
+
+}
+
+.c-table {
+  .algin-center {
+    display: flex;
+  }
+}
+
+.c-table__header-wrapper {
+  border-bottom: 0px solid;
+}
+
+.c-table__body tr.hover-row>td,
+.c-table__body tr.hover-row.current-row>td,
+.c-table__body tr.hover-row.c-table__row--striped>td,
+.c-table__body tr.hover-row.c-table__row--striped.current-row>td {
+  background-color: $hoverColor;
+}
+
+.c-select-dropdown__item.hover,
+.c-select-dropdown__item:hover {
+  background-color: $hoverColor;
+}
+
+.c-cascader-node {
+  &:hover {
+    background-color: $hoverColor !important;
+  }
+}
+
+/* 时间组件样式改变 -- start */
+.c-date-editor {
+  &.c-input--suffix .c-input__inner {
+    padding-right: 32px;
+  }
+
+  &.c-input--prefix .c-input__inner {
+    padding-left: 8px;
+  }
+
+  .c-input__prefix,
+  .c-input__icon {
+    display: none;
+  }
+
+  &.c-range-editor.c-input__inner {
+    padding: 0 8px;
+  }
+
+  .c-input__suffix {
+    width: 32px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    height: auto;
+    background: #f9fafe;
+    border-left: 1px solid #e7e7e7;
+
+    .c-input__icon {
+      display: block;
+      width: 32px;
+
+      &::before {
+        font-family: element-icons !important;
+        content: "\e71f";
+        font-size: 14.5px;
+        font-weight: 600;
+        color: #4b4b4b;
+      }
+    }
+  }
+
+  &.c-range-editor--small .c-range-separator {
+    line-height: 28px;
+  }
+}
+
+/* 时间组件样式改变 -- end */
+
+// 左树提示框样式
+.tree-tooltip {
+  &.c-tooltip__popper {
+    padding: 0;
+
+    .tree-btn {
+      cursor: pointer;
+      width: 60px;
+      height: 118px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+        0px -6px 16px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+      color: rgba(64, 64, 64, 1);
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px 0;
+
+      .item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: rgba(244, 245, 252, 1);
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  &.c-tooltip__popper.is-light {
+    border-color: #fff;
+  }
+
+  &.c-tooltip__popper .popper__arrow {
+    border-bottom-color: #fff !important;
+  }
+}
+
+// 列表序号字体颜色
+.table-index {
+  color: #bdbdbd;
+}
+
+// 详情页title信息
+.info-title {
+  display: block;
+  position: relative;
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b4b4b;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 4px;
+    background: $primaryColor;
+  }
+}
+
+.disabled-new.c-form--label-top {
+  .c-form-item__label {
+    padding: 0 0 0px 0;
+  }
+
+  .c-form-item {
+    padding-left: 0px;
+  }
+}
+
+.disabled-new {
+  .c-form-item__label {
+    color: #8a8a8a !important;
+  }
+
+  .c-form-item {
+    margin-bottom: 8px;
+  }
+
+  .c-tooltip.input-disable,
+  .c-input.is-disabled .c-input__inner {
+    font-size: 14px !important;
+    font-family: PingFangSC-Regular, PingFang SC !important;
+    font-weight: 400 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #4b4b4b !important;
+    cursor: default !important;
+    padding-left: 0 !important;
+  }
+
+  .c-input__suffix {
+    display: none;
+  }
+
+  .c-textarea.is-disabled {
+    .c-textarea__inner {
+      padding-left: 0;
+      font-size: 14px !important;
+      font-family: PingFangSC-Regular, PingFang SC !important;
+      font-weight: 400 !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
+      color: #4b4b4b !important;
+      cursor: default !important;
+    }
+  }
+}
+
+// 添加修改页，按钮位置
+.all-page-common-btn {
+  padding: 16px 20px;
+  margin: 0 0px 16px;
+  box-shadow: 0px -2px 7px 0px rgba(0, 0, 0, 0.06);
+  background: white;
+  position: fixed;
+  width: calc(100% - 300px);
+  bottom: 0;
+}
+
+.icon-to-text {
+  color: $primaryColor;
+  font-size: 14px;
+}
+
+.text-list-common {
+  display: flex;
+  justify-content: flex-start;
+
+  :nth-child(1) {
+    margin-left: 0;
+  }
+
+  :nth-child(2) {
+    margin-left: 8px;
+  }
+
+  :nth-child(3) {
+    margin-left: 8px;
+  }
+
+  :nth-child(4) {
+    margin-left: 8px;
+  }
+}
+
+.details-dialog-adjustpadding-1 {
+  .c-form-item__label {
+    &::before {
+      content: '' !important;
+    }
+  }
+
+  .c-form {
+    position: relative;
+    left: -13px;
+    width: calc(100% + 13px);
+
+    .c-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+// 提示icon
+.cls-icon-info {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(~@/assets/imgs/icon-info.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+//dialog 上下居中
+
+.c-dialog__wrapper {
+  &.dialog-center {
+    .c-dialog {
+      margin-top: 0 !important;
+      position: absolute;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}
+
+
+@media screen and (min-height: 610px) {
+  .c-dialog__wrapper {
+    &.dialog-center-big {
+      .c-dialog {
+        margin-top: 0 !important;
+        position: absolute;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+  }
+}
+
+.c-button+.c-button {
+  margin-left: 16px;
+}
+
+.log-btn {
+  margin-left: 8px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: $primaryColor;
+  cursor: pointer;
+}
+
+.title-span {
+  margin-right: 4px;
+  font-size: 14px;
+  color: #4b4b4b;
+}
+
+.asset-post {
+  .c-dialog__body-wrap {
+    padding: 32px 28px 12px;
+  }
+}
+
+.icon-data {
+  width: 16px;
+  height: 16px;
+  background-image: url(~@/assets/imgs/icon-data.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon-search {
+  width: 16px;
+  height: 16px;
+  background-image: url(~@/assets/imgs/icon-search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// table 隐藏全选
+.hidden-checkall-header {
+  .has-gutter {
+    .c-checkbox {
+      display: none;
+    }
+  }
+
+}
+
+.c-menu-download-sub {
+  .c-menu-item:hover {
+    color: $primaryColor !important;
+    background-color: #f9fafe;
+  }
+}
+
+.c-tabs__active-bar {
+  // width: 56px !important;
+}
+
+.c-loading-mask {
+  z-index: 10000 !important;
+
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  .border {
+    width: 5px;
+    height: 18px;
+    background: $primaryColor;
+    margin: 0 15px 0 0px;
+  }
+  .title {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    font-weight: 500;
+    color: #202020;
+  }
+}
+.white-box-wrap {
+  background: white;
+  border-bottom: 20px solid #f3f4fb;
+  padding: 20px;
+}
+.nopadding{
+  padding: 0px;
+
+}
+// .white-box-wrap:last-child{
+//   border-bottom: 0px solid #f3f4fb;
+// }
+
+.message-wrap.c-popover {
+  padding: 0;
+  border-width: 0;
+  border-radius: 0;
+}

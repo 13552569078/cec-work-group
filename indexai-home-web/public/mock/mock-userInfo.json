@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "msg": "操作成功",
+  "data": {
+    "id": 2000429,
+    "username": "admin",
+    "userType": "0",
+    "jobNum": "",
+    "phone": "",
+    "name": "智能中心测试账号",
+    "certType": "1",
+    "idcard": "",
+    "nickName": "",
+    "email": "",
+    "sex": 0,
+    "avatar": "",
+    "status": 1,
+    "remark": "",
+    "createTime": "2023-04-19 11:01:42",
+    "orgRoleList": [{ "org": {}, "role": {} }],
+    "resList": [],
+    "extAttr": {},
+    "nameSpell": "ZNZXCSZH",
+    "currentOrgRole": { "org": { "extAttr": {} }, "role": {} }
+  }
+}

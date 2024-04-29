@@ -1,0 +1,243 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin centerTocenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin specialTable {
+  .special-header-row {
+    th.is-leaf {
+      &:nth-of-type(1) {
+        border-radius: 8px 0 0 0;
+      }
+      &:nth-last-of-type(2) {
+        border-radius: 0 8px 0 0;
+      }
+      background: #F5F7FA;
+      box-shadow: inset 0px 0px 30px 0px #DCE9F5;
+      filter: blur(0px);
+    }
+  }
+  .special-row {
+    background-color: #F7F9FC;
+  }
+}
+
+
+@mixin tagGroup {
+  .tag-group {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    height: 32px;
+    .tab-item {
+      min-width: 104px;
+      width: auto;
+      color: #4B4B4B;
+      @include centerTocenter;
+      height: inherit;
+      flex-grow: 0;
+      flex-shrink: 0;
+      cursor: pointer;
+      font-size: 14px;
+      border: 1px solid #E7E7E7;
+      &.active {
+        color: #36a4ff;
+        border-color:#36A4FF;
+        &:nth-of-type(1) {
+          border-radius: 2px 0 0 2px;
+        }
+        &:nth-of-type(2) {
+          border-radius: 0 2px 2px 0;
+        }
+      }
+    }
+  }
+}
+
+@mixin resultContent {
+  .result-content {
+    height: 100%;
+    // .search-tips-container {
+    //   border-radius: 8px 8px 0px 0px;
+    // }
+    .result-list {
+      overflow-y: auto;
+      padding: 0 20px;
+      background-color: #fff;
+    }
+  }
+}
+
+// 搜到条件单行
+@mixin oneLineSearch($itemWidth:'') {
+  .advance-search {
+    display: flex;
+    .el-form {
+      flex: 1;
+      .el-form-item {
+        margin-bottom: 0;
+        @if $itemWidth {
+          width: $itemWidth;
+        }
+      }
+    }
+  }
+}
+
+@mixin info($colNum: 2, $valueFontSize: '') {
+  .view-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .view-item {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% / $colNum);
+      margin-bottom: 20px;
+      font-size: 14px;
+      &.row {
+        width: 100%;
+      }
+      .label {
+        color: #8A8A8A !important;
+        margin-bottom: 10px;
+      }
+      .value {
+        color: #4B4B4B;
+        @if $valueFontSize {
+          font-size: $valueFontSize;
+        }
+      }
+    }
+  }
+}
+// 全量导入、增量导入
+@mixin importOrExport() {
+  .el-upload-dragger {
+    width: 400px;
+    height: 160px;
+    border: 1px dashed #bdbdbd;
+    display: flex;
+    flex-direction: column;
+    .el-icon-upload {
+      margin: 28px 0 -8px
+    }
+  }
+  .tips {
+    height: 40px;
+    font-size: 12px;
+    color: #bdbdbd;
+    line-height: 16px;
+    .template-btn {
+      color: #36a4ff !important;
+      cursor: pointer;
+      margin: 0 4px;
+    }
+  }
+
+  .el-upload-dragger .el-upload__text {
+    color: #8a8a8a;
+    em {
+      color: #36a4ff;
+    }
+  }
+  .el-icon-upload:before {
+    content: "";
+    background: url("~@/assets/eventType/icon_upload_cloud.png") no-repeat;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+  }
+  .el-upload-list__item-name {
+    color: #4B4B4B;
+  }
+  .el-upload-list__item {
+    border-radius: 0;
+    align-items: center;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4B4B4B;
+    .el-icon-paperclip {
+      margin-right: 8px;
+    }
+    .el-icon-paperclip:before {
+      content: "";
+      background: url("~@/assets/eventType/icon_file.png") no-repeat;
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: relative;
+      top: 4px;
+    }
+    &:hover {
+      color: #36A4FF;
+      background: #F9FAFE;
+      .el-upload-list__item-name {
+        color: #36A4FF;
+      }
+      .el-icon-paperclip:before {
+        content: "";
+        background: url("~@/assets/eventType/icon_file_hover.png") no-repeat;
+        background-size: 16px 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+      }
+      .el-icon-delete:before {
+          content: "";
+          background: url("~@/assets/eventType/icon_upload_close.png") no-repeat;
+          background-size: 16px 16px;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+      }
+    }
+    .el-upload-list--line__delete {
+      display: inline-block;
+      right: 8px;
+    }
+    .el-icon-delete:before {
+        content: "";
+        background: url("~@/assets/eventType/icon_upload_ok.png") no-repeat;
+        background-size: 16px 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+    }
+}
+}

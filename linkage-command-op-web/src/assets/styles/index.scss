@@ -1,0 +1,37 @@
+@use "sass:math";
+@use "sass:map";
+
+$features_respond: true; // 开启响应式特性
+$features_rem: true; // 开启rem作为尺寸单位
+
+$page-width: 100%;
+$page-height: 100vh;
+
+@import '../../../node_modules/@hongluan-ui/styles/2.x/visualized/spec/config';
+@import '../../../node_modules/hongluan-ui/theme/scss/common/colors';
+
+@import '../../../node_modules/hongluan-ui/theme/scss/components';
+@import '../../../node_modules/hongluan-business-ui/theme/scss/components';
+
+$imgPath: '../../../node_modules/@hongluan-ui/styles/images/';
+$fontPath: '../../../node_modules/@hongluan-ui/styles/fonts/';
+@import '../../../node_modules/@hongluan-ui/styles/2.x/visualized/themes/pro/index';
+@import '../../../node_modules/fx-front-framework/theme/visualized';
+
+@import "./pages"; // 公共页面样式
+@import "./reset"; // 重置hl样式
+@import "./layout"; // 整体布局通用样式
+@import "./map"; // 整体布局通用样式
+// 主布局 begin
+
+:root {
+  --text-secondary: #B5CEE3 !important;
+  --px20: calc(var(--xxs) * 5);
+  --card-width: calc(var(--xxl) * 11);
+  --panels-top: 8.888888888888889vh;;
+}
+html {
+  font-size: 1.46vh;
+}
+
+// **********************调整完成后，删除visualized目录**************************

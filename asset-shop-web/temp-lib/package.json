@@ -1,0 +1,42 @@
+{
+  "_from": "cestc-ioc-temp-pack@0.0.2",
+  "_id": "cestc-ioc-temp-pack@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-nOkLgNICuaT/QCSzy+16a5gzdzdY0z60WLsp9bch/Xxax9We3Z8cJzPnaXISaLiuWTJMeo9/ZN/4cKJDrZFSCQ==",
+  "_location": "/cestc-ioc-temp-pack",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cestc-ioc-temp-pack@0.0.2",
+    "name": "cestc-ioc-temp-pack",
+    "escapedName": "cestc-ioc-temp-pack",
+    "rawSpec": "0.0.2",
+    "saveSpec": null,
+    "fetchSpec": "0.0.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmmirror.com/cestc-ioc-temp-pack/-/cestc-ioc-temp-pack-0.0.2.tgz",
+  "_shasum": "492428e5d3de16fff4c0336504126b215e807603",
+  "_spec": "cestc-ioc-temp-pack@0.0.2",
+  "_where": "/Volumes/work/cestc/asset-shop-web",
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A Component Library for Vue.js.",
+  "devDependencies": {},
+  "keywords": [
+    "vue",
+    "components"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "cestc-ioc-temp-pack",
+  "peerDependencies": {
+    "vue": "^2.5.17"
+  },
+  "scripts": {},
+  "version": "0.0.2"
+}

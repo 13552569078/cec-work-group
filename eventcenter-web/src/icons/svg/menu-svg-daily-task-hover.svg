@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/导航/任务hover</title>
+    <g id="icon/导航/任务hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="任务巡检_任务管理_hover">
+            <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="16" height="16"></rect>
+            <path d="M13,6.578 L15,8 L15,15 L1,15 L1,8 L3,6.578 L3,8.295 L2.4,8.722 L2.4,13.6 L3,13.599 L3,14 L13,14 L13,13.599 L13.6,13.6 L13.6,8.722 L13,8.295 L13,6.578 Z" id="形状结合" fill="#36A4FF" fill-rule="nonzero"></path>
+            <path d="M13,1 L13,10.1497803 L8.28356934,11.756 L3,10.1497803 L3,1 L13,1 Z M11.6,2.4 L4.4,2.4 L4.4,9.112 L8.258,10.285 L11.6,9.147 L11.6,2.4 Z" id="矩形" fill="#36A4FF" fill-rule="nonzero"></path>
+            <path d="M10,7 L10,8.4 L5,8.4 L5,7 L10,7 Z M7,5 L7,6.4 L5,6.4 L5,5 L7,5 Z M10,3 L10,4.4 L5,4.4 L5,3 L10,3 Z" id="形状结合" fill="#36A4FF"></path>
+            <path d="M15,8 L15,15 L1,15 L1,8 L8.25082773,10.2992373 L15,8 Z M2.4,9.912 L2.4,13.6 L13.6,13.6 L13.6,9.956 L8.26649966,11.7729079 L2.4,9.912 Z" id="矩形" fill="#36A4FF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

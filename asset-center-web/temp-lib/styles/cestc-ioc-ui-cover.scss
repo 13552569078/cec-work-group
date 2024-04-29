@@ -1,0 +1,82 @@
+@import './variables.scss';
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.c-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// dropdown
+.c-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+.c-scrollbar__wrap {
+  overflow: auto;
+}
+
+.c-pager {
+  .active {
+    background-color: $primaryColor !important;
+  }
+}
+
+// 左树提示框样式
+.tree-tooltip {
+  &.c-tooltip__popper {
+    padding: 0;
+    .tree-btn {
+      cursor: pointer;
+      width: 60px;
+      height: 118px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+        0px -6px 16px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+      color: rgba(64, 64, 64, 1);
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px 0;
+      .item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background: rgba(244, 245, 252, 1);
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  &.c-tooltip__popper {
+    &.is-light {
+      border-color: #fff;
+    }
+  }
+  &.c-tooltip__popper {
+    .popper__arrow {
+      border-bottom-color: #fff !important;
+    }
+  }
+}
+
+// tree组件样式公共修改
+.c-tree {
+  font-size: 14px;
+  color: #4B4B4B;
+}
+.c-tree--highlight-current .c-tree-node.is-current > .c-tree-node__content {
+  background: #F9FAFE;
+}
+.c-tree-node__content:hover {
+  background: #F9FAFE;
+}
+.c-tabs__content {
+  padding-top: 20px;
+}

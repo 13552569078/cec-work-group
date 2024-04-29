@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/箭头</title>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="大理备份" transform="translate(-2358.000000, -197.000000)">
+            <g id="编组-27" transform="translate(2232.000000, 167.000000)">
+                <g id="icon/箭头" transform="translate(126.000000, 30.000000)">
+                    <rect id="矩形" fill-opacity="0.01" fill="#000000" x="0" y="0" width="20" height="20"></rect>
+                    <polygon id="路径-15" fill="#0095FF" fill-rule="nonzero" points="2.28723297 4.66575887 3.28844222 3.33333333 11.2773711 9.79789857 3.29478896 16.3872336 2.28088624 15.0644414 8.5200489 9.81115498"></polygon>
+                    <polygon id="路径-15备份" fill-opacity="0.5" fill="#0095FF" fill-rule="nonzero" points="8.95389964 4.66575887 9.95510889 3.33333333 17.9440378 9.79789857 9.96145562 16.3872336 8.94755291 15.0644414 15.1867156 9.81115498"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

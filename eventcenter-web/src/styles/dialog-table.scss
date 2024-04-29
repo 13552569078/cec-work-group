@@ -1,0 +1,43 @@
+
+  .el-table {
+    color: $fontColor;
+    .table-column-index .cell{
+      color: $fontNormalGrey1;
+    }
+    .cell {
+      line-height: 31px;
+    }
+    // 树形图标替换
+    &__expand-icon {
+      transform: rotate(-90deg);
+      color:$disabled;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      .el-icon-arrow-right::before {
+        content: "\e790";
+      }
+    }
+    &__expand-icon--expanded {
+      color: #4b4b4b;
+      transform: rotate(0);
+    }
+    // 第一级下拉往前移动，保持名称对齐
+    .el-table__row--level-0 {
+      .el-table__expand-icon {
+        margin-left: -16px;
+      }
+    }
+    // 事件类型中，事件小类有背景色
+    &.event-type-table {
+      // 事件小类有背景色
+      .el-table__row--level-2 {
+        background-color: #f9fafe;
+      }
+    }
+    // 修复数据为空的时候，右侧操作列有空白横线的样式
+    &__fixed-right::before,
+    &__fixed::before {
+      background-color: transparent;
+    }
+  }

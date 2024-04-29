@@ -1,0 +1,25 @@
+{
+  "code": 0,
+  "msg": "操作成功",
+  "data": {
+    "id": 2000429,
+    "username": "admin",
+    "userType": "0",
+    "jobNum": "",
+    "phone": "",
+    "name": "智能中心测试账号",
+    "certType": "1",
+    "idcard": "",
+    "nickName": "",
+    "email": "",
+    "sex": 0,
+    "avatar": "",
+    "status": 1,
+    "remark": "",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNjg0OTE2NzQyNDEwLCJyb2xlcyI6W10sInVjT3JnUm9sZVZPIjp7InJvbGUiOnt9LCJvcmciOnt9fSwiaXNBZG1pbiI6MCwidGVuYW50Q29kZSI6IlNIWkwiLCJ1c2VySWQiOjIwMDA0MjksImV4cCI6MTY4NTUyMTU0MjQxMCwidXNlcm5hbWUiOiJ3ZWl4aWFuIn0.24WTIJt4F6faZLv3MO8O45t3q7zaST2ixnMaJEKSBGU",
+    "createTime": "2023-04-19 11:01:42",
+    "orgRoleList": [{ "org": {}, "role": {} }],
+    "nameSpell": "ZNZXCSZH",
+    "currentOrgRole": { "org": {}, "role": {} }
+  }
+}

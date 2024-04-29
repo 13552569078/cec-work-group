@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="203px" viewBox="0 0 26 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 31备份 7</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.4853252%" id="linearGradient-1">
+            <stop stop-color="#4BEBFF" offset="0%"></stop>
+            <stop stop-color="#00FEFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9629448%" y1="80.9984348%" x2="50.1290995%" y2="4.4472698%" id="linearGradient-2">
+            <stop stop-color="#CAFFF7" stop-opacity="0.4" offset="0%"></stop>
+            <stop stop-color="#D1FEFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.554265203%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#4BFFFE" offset="0%"></stop>
+            <stop stop-color="#9BFCFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="52.4721639%" y1="57.6048318%" x2="48.181293%" y2="41.6689039%" id="linearGradient-4">
+            <stop stop-color="#BCFFFD" offset="0%"></stop>
+            <stop stop-color="#B8F2FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.4853252%" id="linearGradient-5">
+            <stop stop-color="#4BEBFF" offset="0%"></stop>
+            <stop stop-color="#00FEFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.957485%" y1="80.9984348%" x2="50.1481213%" y2="4.4472698%" id="linearGradient-6">
+            <stop stop-color="#CAFFF7" stop-opacity="0.4" offset="0%"></stop>
+            <stop stop-color="#D1FEFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="大理备份" transform="translate(-1920.000000, -458.000000)" fill-rule="nonzero" stroke-width="2">
+            <g id="编组-18备份" transform="translate(1496.000000, 333.000000)">
+                <g id="编组-52" transform="translate(55.000000, 70.000000)">
+                    <g id="编组-31备份-7" transform="translate(370.000000, 56.798201)">
+                        <polygon id="矩形备份-12" stroke="url(#linearGradient-2)" fill="url(#linearGradient-1)" transform="translate(17.602400, 102.064709) scale(-1, 1) translate(-17.602400, -102.064709) " points="12 4.72761918 23.2047995 9.81550488 23.2047995 199.401799 12 193.948741"></polygon>
+                        <polygon id="矩形" stroke="url(#linearGradient-4)" fill="url(#linearGradient-3)" points="0 4.72761918 12 9.81550488 23.2047995 4.72761918 11.4 2.74614468e-13"></polygon>
+                        <polygon id="矩形备份-19" stroke="url(#linearGradient-6)" fill="url(#linearGradient-5)" transform="translate(6.000000, 102.049170) scale(-1, 1) translate(-6.000000, -102.049170) " points="0 9.81550488 12 4.72761918 12 193.948741 -1.1937118e-12 199.37072"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

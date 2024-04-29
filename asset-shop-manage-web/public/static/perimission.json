@@ -1,0 +1,53 @@
+[
+	{
+    "resourceName": "菜单",
+		"resourceType": "menuHead",
+		"resourceId": "caidan",
+		"menuItems": [
+			{
+				"menuTitle": "概览",
+				"menuId": "statistics",
+				"resourceType": "menu"
+			},
+			{
+				"menuTitle": "运营审核",
+				"menuId": "approvalManage",
+				"resourceType": "catalogue",
+				"subMenus": [
+					{
+						"menuTitle": "编目审核",
+						"menuId": "approval",
+						"resourceType": "catalogue"
+					},
+					{
+						"menuTitle": "资源申请",
+						"menuId": "subApproval",
+						"resourceType": "catalogue"
+					}
+				]
+			},
+			{
+				"menuTitle": "基础信息管理",
+				"menuId": "basicInfo",
+				"resourceType": "catalogue",
+				"subMenus": [
+					{
+						"menuTitle": "标签管理",
+						"menuId": "tagsPage",
+						"resourceType": "menu"
+					},
+					{
+						"menuTitle": "场景管理",
+						"menuId": "scenePage",
+						"resourceType": "menu"
+					}
+				]
+			},
+      {
+				"menuTitle": "运营配置管理",
+				"menuId": "operateRule",
+				"resourceType": "menu"
+			}
+		]
+	}
+]

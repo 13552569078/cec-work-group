@@ -1,0 +1,191 @@
+@font-face {
+  font-family: YouSheBiaoTiHei;
+  src: url('./fonts/YouSheBiaoTiHei.ttf');
+}
+
+@font-face {
+  font-family: Impact;
+  src: url('./fonts/Impact.ttf');
+}
+
+#app::after, #app::before {
+  z-index: 1;
+  transition: opacity ease .3s;
+}
+#app:has(.background-map.plotting)::after,
+#app:has(.background-map.plotting)::before {
+  opacity: 0;
+}
+
+.big-num {
+  font-size: calc(var(--font-xxl) + var(--font-lg));
+  font-family: Impact;
+  color: #FFEA44;
+  line-height: calc(var(--font-xxl) + var(--font-xxxl));
+}
+
+.mid-num {
+  font-size: var(--font-xxxl);
+  font-family: Impact;
+  color: #FFFFFF;
+  line-height: var(--font-xxxxl);
+}
+
+.xmid-num {
+  font-size: calc(var(--font-md) * 2); // 28px
+  font-family: Impact;
+  color: #FFFFFF;
+  line-height: var(--font-xxxxl);
+}
+
+.dlg-footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.common-card-bg {
+  background-color: rgba(0,158,247,0.12);
+}
+.common-font-normal {
+  font-size: var(--font-lg);
+  line-height: 1.375;
+}
+
+.card-popper.resource-search-card {
+  --card-popper-width: calc(var(--xxs) * 80);
+  --card-popper-header-img: url('@/assets/images/overview/right-4/header.png');
+  --form-radius: var(--xxs);
+  --form-bg-color: rgba(0,158,247,0.12);
+  --form-border-color: rgba(0,158,247,0.24);
+  position: absolute;
+  top: var(--card-top, 0);
+  right: calc(var(--card-width) + var(--xxl));
+  height: calc(var(--xxs) * 120);
+  .list {
+    height: calc(100% - var(--form-md) - var(--xxs) * 3);
+    margin-top: calc(var(--xxs) * 3);
+    .list-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: var(--xxs);
+      padding: calc(var(--xxs) * 3) 0;
+      border-bottom: 1px solid #2F5787;
+      &:first-child {
+        padding-top: 0;
+      }
+      .address {
+        width: calc(100% - var(--md));
+      }
+    }
+  }
+}
+
+.card-popper.create-assemble-point-card {
+  --card-popper-width: calc(var(--xxs) * 80);
+  --card-popper-header-img: url('@/assets/images/overview/right-4/header.png');
+  --form-radius: var(--xxs);
+  --form-bg-color: rgba(0,158,247,0.12);
+  --form-border-color: rgba(0,158,247,0.24);
+  position: absolute;
+  top: var(--card-top, 0);
+  right: calc(var(--card-width) + var(--xxl));
+  height: calc(var(--xxs) * 102);
+}
+
+.card-popper.cluster-point-card {
+  --card-popper-width: calc(var(--xxs) * 80);
+  --card-popper-header-img: url('@/assets/images/overview/right-4/header.png');
+  height: calc(var(--xxs) * 80);
+  .list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--xxs);
+    .list-item {
+      height: calc(var(--xxs) * 11);
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-image: url('@/assets/images/overview/right-1/team-item-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-right: var(--md);
+      padding-left: calc(var(--px20) + var(--md));
+      font-size: var(--font-lg);
+      line-height: calc(var(--font-xxxl));
+      .name {
+        max-width: 16em;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background-image: url('@/assets/images/overview/right-1/team-item-icon.png');
+        background-size: 100%;
+        width: calc(var(--lg) + var(--xxs) / 2);
+        height: calc(var(--lg) + var(--xxs) / 2);
+      }
+    }
+  }
+}
+
+.event-type-tree .selector-tree {
+  width: 100% !important;
+}
+
+.form-container {
+  --form-md: calc(var(--xxs) * 8);
+  .hl-button {
+    min-width: calc(var(--xxs) * 18);
+    height: var(--form-md);
+  }
+}
+
+.font-16 {
+  font-size: var(--font-lg);
+  line-height: 1.375;
+}
+.font-14 {
+  font-size: var(--font-md);
+  line-height: 1.42;
+}
+
+.event-state-tag {
+  &.HANDLING {
+    --tag-font-color: #FFEA44;
+    --tag-border-color: transparent;
+    --tag-bg-color: rgba(255, 234, 68, .24);
+  }
+  &.FINISHED {
+    --tag-font-color: #72F5AC;
+    --tag-border-color: transparent;
+    --tag-bg-color: rgba(114, 245, 172, .24);
+  }
+  &.WAITING_HANDLING {
+    --tag-font-color: #FF6060;
+    --tag-border-color: transparent;
+    --tag-bg-color: rgba(240, 37, 75, .24);
+  }
+}
+
+.hl-button.btn-map-point {
+  background-image: url('@/assets/images/button/button-point.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meeting-dialog {
+  width: 70vw;
+  height: 80vh;
+  .panel-body {
+    height: calc(100% - var(--panel-header-height));
+    padding: 0;
+  }
+  .meeting-container {
+    width: 100%;
+    height: 100%;
+  }
+}

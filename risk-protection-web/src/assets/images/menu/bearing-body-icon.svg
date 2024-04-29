@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>容器</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="16" height="16"></rect>
+    </defs>
+    <g id="导航" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-24.000000, -308.000000)" id="aside-1">
+            <g transform="translate(0.000000, 56.000000)">
+                <g id="容器-148" transform="translate(0.000000, 76.000000)">
+                    <g id="hl-sub-menu-7备份" transform="translate(0.000000, 162.000000)">
+                        <g id="容器" transform="translate(24.000000, 14.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g fill-rule="nonzero"></g>
+                            <polygon id="路径" fill-rule="nonzero" mask="url(#mask-2)" points="0 0 16 0 16 16 0 16"></polygon>
+                            <g id="FillSetting2" mask="url(#mask-2)" fill="currentColor" fill-rule="nonzero">
+                                <g transform="translate(8.000000, 8.251845) rotate(-0.000037) translate(-8.000000, -8.251845) translate(1.000000, 2.000037)" id="路径">
+                                    <path d="M6.57191818,0.165492536 C6.79445455,-0.0367756458 7.12447273,-0.0536329185 7.36489091,0.114927081 L7.42808182,0.165492536 L14,6.13997981 L12.0909091,6.13997981 L12.0909091,11.8672525 C12.0909091,12.1935798 11.8452727,12.4625707 11.5287455,12.4993525 L11.4545455,12.5036162 L7.31818182,12.5036162 L8.90909091,9.95816163 L6.68181818,8.04907072 L9.22727273,6.13997981 L7.63636364,4.86725254 L7.95454545,2.95816163 L6.04545455,4.86725254 L7.63636364,6.13997981 L4.45454545,8.04907072 L6.84090909,10.2763434 L4.77272727,12.5036162 L2.54545455,12.5036162 C2.21910182,12.5036162 1.95013,12.2579798 1.91337364,11.9414525 L1.90909091,11.8672525 L1.90909091,6.13997981 L7.29284156e-15,6.13997981 L6.57191818,0.165492536 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

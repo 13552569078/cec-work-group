@@ -1,0 +1,297 @@
+// @import "./variables.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./sidebar.scss";
+@import "./searchPanel.scss";
+@import "./dialog-table.scss";
+@import "./table.scss";
+@import "./utils.scss";
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  // 种子工程里  最好不要定义text-rendering，这么定义 在Safari里同等情况下相同的字渲染会变胖，导致设置的宽度不够用 出现换行 by 张婕
+  // text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  background-color: $contentBg;
+  position: relative;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+  color: $fontColor;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.page-container {
+  height: 100%;
+  flex: 1;
+
+  >div {
+    min-height: calc(100% - 64px - 20px);
+    height: 100%;
+  }
+}
+
+@each $short,
+$pos in ("c": "center", "r": "right", "l": "left") {
+  .ta-#{$short} {
+    text-align: #{$pos};
+  }
+}
+
+// 间距 如 m10对应 margin:10px pt20: padding-top:20px
+@each $gutter in 0 5 6 8 10 12 16 22 24 28 20 32 36 40 48 {
+
+  @each $pos,
+  $value in ("t": "top", "r": "right", "b": "bottom", "l": "left") {
+    .m#{$pos}#{$gutter} {
+      margin-#{$value}: #{$gutter}px;
+    }
+
+    .m#{$gutter} {
+      margin: #{$gutter}px;
+    }
+
+    .p#{$pos}#{$gutter} {
+      padding-#{$value}: #{$gutter}px;
+    }
+
+    .p#{$gutter} {
+      padding: #{$gutter}px;
+    }
+  }
+}
+
+// 字体大小 fontSize14对应 font-size: 14px
+@each $ft in 12 14 16 18 24 {
+  .fs#{$ft} {
+    font-size: #{$ft}px;
+  }
+}
+
+// 行间距 lh20对应 line-height: 20px;
+@each $lineheight in 10 12 16 20 24 32 40 {
+  .lh#{$lineheight} {
+    line-height: #{$lineheight}px;
+  }
+}
+
+// 字重大小 fw-bold对应 font-weight: bold
+@each $short,
+$fw in ("l": "lighter", "n": "normal", "b": "bold") {
+  .fw-#{$short} {
+    font-weight: #{$fw};
+  }
+}
+
+//  w20对应 width: 20px
+@each $w in 50 100 {
+  .w#{$w} {
+    width: #{$w}px;
+  }
+}
+
+//  h20对应 height: 20px
+@each $height in 20 24 32 {
+  .h#{$height} {
+    height: #{$height}px;
+  }
+}
+
+//  wp20对应 width: 20%
+@each $widthP in 20 25 33 50 100 {
+  .wp#{$widthP} {
+    width: #{$widthP}+"%";
+  }
+}
+
+//  opacity65对应 opacity: 0.65
+@each $opacity in 100 65 85 {
+  .op#{$opacity} {
+    opacity: #{calc($opacity / 100)};
+  }
+}
+
+// 单行省略
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+// 多行省略
+@each $ellipsis in 2 3 4 5 {
+  .ellipsis#{$ellipsis} {
+    overflow: hidden; // 超出隐藏
+    text-overflow: ellipsis; // 超出使用省略号
+    display: -webkit-box;
+    -webkit-line-clamp: $ellipsis; // 第几行
+    -webkit-box-orient: vertical;
+  }
+}
+
+// textarea 右下角可拖拽样式隐藏
+.el-textarea__inner {
+  resize: none;
+}
+
+// width auto
+.width-auto {
+  width: auto;
+}
+
+.hidden-popper {
+  display: none;
+}
+
+.color-primary {
+  color: #36A4FF;
+}
+
+//自定义滚动条
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+*:hover::-webkit-scrollbar,
+*:hover::-webkit-scrollbar-track,
+*:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+// 滚动条整体宽度
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+// 滚动条滑槽样式
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+// 滚动条样式
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #ddd;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #999;
+}
+
+// 地图 super iclent logog 隐藏
+.iclient-leaflet-logo {
+  display: none;
+}
+
+.eventJK_commonMD {
+  .title {
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px 0px #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    span {
+      border-left: 4px solid #36A4FF;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #313131;
+      line-height: 14px;
+      padding-left: 8px;
+    }
+  }
+
+  .putcontent {
+    width: 100%;
+  }
+}
+
+//   地图网格名称样式
+.my-div-icon {
+  white-space: nowrap;
+  font-size: 21px;
+
+  &.text {
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+// 全局tips
+.info-tips {
+  background: url("~@/assets/ic_tips.png") no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

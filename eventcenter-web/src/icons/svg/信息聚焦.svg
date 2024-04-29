@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="399px" height="218px" viewBox="0 0 399 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>信息聚焦</title>
+    <defs>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#78C2FF" offset="0%"></stop>
+            <stop stop-color="#36A4FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="359" height="178"></rect>
+        <filter x="-5.6%" y="-11.2%" width="111.1%" height="122.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-8.4%" y="-16.9%" width="116.7%" height="133.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.190588235   0 0 0 0 0.578823529   0 0 0 0 0.9  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页全" transform="translate(-1161.000000, -514.000000)">
+            <g id="编组-14备份-4" transform="translate(822.000000, 292.000000)">
+                <g id="信息聚焦" transform="translate(359.000000, 242.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="蒙版" filter="url(#filter-3)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M77.25,56.5 L77.25,32.75 L64.75,32.75 C64.75,22.75 69.9583333,14.2083333 80.375,7.125 L80.375,7.125 L74.75,0.25 C60.5833333,7.75 53.7083333,19.625 54.125,35.875 L54.125,35.875 L54.125,56.5 L77.25,56.5 Z M46,56.5 L46,32.75 L33.5,32.75 C32.6666667,22.75 37.6666667,14.2083333 48.5,7.125 L48.5,7.125 L42.875,0.25 C29.125,7.75 22.4583333,19.625 22.875,35.875 L22.875,35.875 L22.875,56.5 L46,56.5 Z" id="“" fill="#F0F2F5" fill-rule="nonzero" opacity="0.200000003" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

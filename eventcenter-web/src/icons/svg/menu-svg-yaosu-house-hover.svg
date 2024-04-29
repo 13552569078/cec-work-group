@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>治理要素_房屋专题hover</title>
+    <g id="治理要素_房屋专题hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/导航/房屋专题hover">
+            <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="16" height="16"></rect>
+            <path d="M10,1 L10,5.717 L15.7516154,8.58805709 L15.1263143,9.84065385 L14.699,9.627 L14.7,15.0081055 L8.63837891,15.0081055 L8.638,15 L1,15 L1,1 L10,1 Z M10.038,7.3 L10.038,13.608 L13.299,13.608 L13.299,8.928 L10.038,7.3 Z M8.6,2.4 L2.4,2.4 L2.4,13.6 L4,13.6 L4,10 L7,10 L7,13.6 L8.6,13.6 L8.6,2.4 Z M6,11 L5,11 L5,13.6 L6,13.6 L6,11 Z" id="形状结合" fill="#36A4FF" fill-rule="nonzero"></path>
+            <path d="M12,11 L12,12.6 L10,12.6 L10,11 L12,11 Z M12,9 L12,10.6 L10,10.6 L10,9 L12,9 Z M7.6,7 L7.6,8.6 L6,8.6 L6,7 L7.6,7 Z M4.6,7 L4.6,8.6 L3,8.6 L3,7 L4.6,7 Z M7.6,4 L7.6,5.6 L6,5.6 L6,4 L7.6,4 Z M4.6,4 L4.6,5.6 L3,5.6 L3,4 L4.6,4 Z" id="形状结合" fill="#36A4FF"></path>
+        </g>
+    </g>
+</svg>

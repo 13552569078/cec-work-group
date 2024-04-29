@@ -1,0 +1,26 @@
+$primaryColor: #36A4FF;
+$textColor: #4B4B4B;
+
+$pageBgColor: #f1f5fb;
+
+$sideBarWidth: 255px;
+$sideBarHideWidth: 97px;
+$navbarHeight: 64px;
+
+$menuText: #4B4B4B;
+$menuActiveText: #FFFFFF;
+$menuHover: rgba(255, 255, 255, 0.05);
+$menuActive: rgba(255, 255, 255, 0.1);
+$menuItemHeight: 44px;
+$menuItemTitleHeight: 44px;
+$menuFontSize: 14px;
+$logoHeight: $navbarHeight + 28px;
+$sidebarBgImage: url("~@l/assets/frame/sidebar-bg.png");
+
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  primaryColor: $primaryColor;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  pageBgColor: $pageBgColor;
+}

@@ -1,0 +1,95 @@
+@use "sass:math";
+@use "sass:map";
+
+@import '../../../node_modules/@hongluan-ui/styles/2.x/visualized/spec/config';
+@import '../../../node_modules/hongluan-ui/theme/scss/common/colors.scss';
+
+$features_respond: true; // 开启响应式特性
+$features_rem: true; // 开启rem作为尺寸单位
+
+$page-width: 100%;
+$page-height: 100vh;
+$main-top-size: calc(var(--xxs) * 88/4);
+$tool-top-size: calc(var(--xxl) * 4.2);
+$panel-card-padding: 24px;
+
+
+@import '../../../node_modules/hongluan-ui/theme/scss/components';
+
+
+//--背景色
+$conf_bg_color: (
+  "body": #0E1726, // 主体背景 (主体)
+  "content": rgba(#121B2B, 0.72), // 内容区背景 (内容区)
+  "light": rgba(#2F476E, 0.12), // 淡色背景 (用于展示一个范围)
+  "popup": rgba(#1B2637, 0.96), // 弹窗背景 (浮层、弹窗等)
+  "element": rgba(#141B28, 0.60), // 组件元素背景
+  "hover": rgba(#384B67, 0.56), // 悬停背景
+  "active": rgba(#384B67, 0.56), // 激活背景
+  "header": rgba(#384B67, 0.32), // 标题背景
+  "backdrop": rgba(#020b1b, 0.8), // 背景幕布
+);
+
+//+----------------------------------------------------------------------
+// Panel 属性设置
+//+----------------------------------------------------------------------
+$conf_panel: (
+  "radius": 0, // 圆角尺寸
+  "padding": var(--lg), // 填充尺寸
+  "header-height": 58px, // 标题栏高度
+  "bg-color": rgba(15,24,42, 0.9), // 背景颜色
+  "border-width": 1px, // 边框尺寸
+  "border-color": var(--border-regular), // 边框颜色
+  "title-font-size": var(--font-h4), // 文本尺寸
+  "title-font-color": var(--text-regular), // 文本颜色 (默认)
+  "shadow": var(--box-shadow-md), // 阴影样式 (false为不渲染)
+);
+
+@import '../../../node_modules/hongluan-ui/theme/scss/components';
+@import '../../../node_modules/hongluan-business-ui/theme/scss/components';
+
+$imgPath: '../../../node_modules/@hongluan-ui/styles/images/';
+$fontPath: '../../../node_modules/@hongluan-ui/styles/fonts/';
+@import '../../../node_modules/@hongluan-ui/styles/2.x/visualized/themes/pro/index';
+@import '../../../node_modules/fx-front-framework/theme/visualized.scss';
+
+@import "./pages"; // 公共页面样式
+@import "./font"; // 公共页面样式
+
+// 主布局 begin
+html {
+  font-size: 1.46vh;
+}
+
+body {
+  width: 100% !important;
+}
+
+/* 滚动条样式美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.6);
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f6f6f6;
+}
+
+// **********************调整完成后，删除visualized目录**************************

@@ -1,0 +1,98 @@
+.map-class {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  // &::after,
+  // &::before {
+  //   pointer-events: none;
+  //   position: absolute;
+  //   content: '';
+  //   left: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: size(500px);
+  //   z-index: 1;
+  //   background-image: url($imgPath + 'left-mask.png');
+  //   background-repeat: no-repeat;
+  //   background-size: 100% auto;
+  //   opacity: 0.6;
+  // }
+
+  // &::after {
+  //   left: unset;
+  //   right: 0;
+  //   transform: scaleX(-1);
+  // }
+}
+
+.map-layers {
+  z-index: 1;
+  position: absolute;
+  top: calc(var(--sm) + var(--xxs) * 10 + var(--panels-top));
+  .layer-list-icon {
+    width: calc(var(--xxs) * 9);
+    height: calc(var(--xxs) * 9);
+    background-image: url('@/assets/images/map/layers-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .map-layer-list {
+    --card-popover-body-paddding: calc(var(--xxs) * 3.5);
+    width: calc(var(--xxs) * 58);
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity .4s;
+    &.hide {
+      opacity: 0;
+    }
+    .layer-tree {
+      --tree-height: calc(var(--xxs) * 7);
+      --tree-bg-color: transparent;
+      --tree-bg-color-hover: transparent;
+      --tree-child-bg-color: transparent;
+      --tree-child-bg-color-hover: transparent;
+      :deep(.hl-checkbox) {
+        --checkbox-size: calc(var(--xxs) * 3.5);
+        --checkbox-bg-color: transparent;
+        --checkbox-bg-color-hover: transparent;
+        --checkbox-bg-color-checked: transparent;
+        --checkbox-border-color: #2CE9FD;
+        --checkbox-border-color-hover: #2CE9FD;
+        --checkbox-border-color-checked: #2CE9FD;
+        .checkbox-inner {
+          .hl-icon {
+            color: #2CE9FD;
+          }
+        }
+      }
+      .layer-icon {
+        width: var(--md);
+        height: var(--md);
+      }
+    }
+  }
+}
+
+.map-tools-left-show {
+  transition: left 0.3s;
+  left: calc(var(--xxl) * 13 + var(--extra-left, 0px));
+}
+.map-tools-moving-left {
+  transition: all 0.3s;
+  left: calc(var(--xxs) * 15 + var(--extra-left, 0px)) !important;
+}
+
+.map-tools-right-show {
+  transition: right 0.3s;
+  right: calc(var(--xxs) * 130 + var(--extra-right, 0px));
+}
+.map-tools-moving-right {
+  transition: all 0.3s;
+  right: calc(var(--xxs) * 15 + var(--extra-right, 0px)) !important;
+}

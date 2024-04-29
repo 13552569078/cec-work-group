@@ -1,0 +1,127 @@
+// 列表页通用样式
+.lp-search-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.lp-search-form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding-bottom: 20px;
+  margin-right: 24px !important;
+
+  &::before {
+    //flex: 0 0 60px;
+    //text-align: right;
+    content: attr(label);
+    margin-right: 16px;
+    color: #4B4B4B;
+    font-size: 14px;
+    white-space:nowrap;
+  }
+  .c-input, .c-select {
+    width: 296px;
+  }
+}
+
+.lp-search-form-field-hastree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding-bottom: 20px;
+  margin-right: 24px !important;
+
+  &::before {
+    //flex: 0 0 60px;
+    //text-align: right;
+    content: attr(label);
+    margin-right: 16px;
+    color: #4B4B4B;
+    font-size: 14px;
+    white-space:nowrap;
+  }
+  .c-input, .c-select {
+    width: 272px;
+  }
+}
+
+
+.lp-data-controls {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  justify-content: space-between;
+}
+.lp-data-total {
+  color: #202020;
+  &::before{
+    font-family: 'element-icons';
+    font-size: 14.5px;
+    font-weight: 600;
+    content: "\e778";
+    margin-right: 8px;
+  }
+}
+.lp-data-controls-btn {
+  &>span {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+.lp-icon-btn {
+  font-size: 16px;
+  margin: 0 6px;
+}
+
+
+.lp-page-footer {
+  padding-right: 24px;
+  padding-left: 20px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  .c-pagination.is-background .btn-prev:disabled{
+    background: #F1F3F8;
+  }
+  .c-pagination.is-background .c-pager li{
+    border: 1px solid transparent;
+    background: transparent;
+  }
+  .c-pagination.size-left {
+    width: 100%;
+    position: relative;
+    .c-pagination__sizes {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    .c-pagination__total {
+      position: absolute;
+      left: 134px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="26px" viewBox="0 0 62 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 10</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0.644667832%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#A09203" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E4D136" stop-opacity="0.386582168" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="6.10622664e-14%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#E4D136" offset="0%"></stop>
+            <stop stop-color="#FFF67F" stop-opacity="0.355523383" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0.644667832%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#A09703" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#F7FC42" stop-opacity="0.388849432" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="6.10622664e-14%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#E4DE36" offset="0%"></stop>
+            <stop stop-color="#FFF78D" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-5" points="10.8589832 2.72146795e-15 13.3448193 -4.1378113e-14 2.60370832 13.0032119 13.3038293 26 10.8363 26 0 13.0028703"></polygon>
+        <filter x="-45.0%" y="-23.1%" width="189.9%" height="146.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.970428103   0 0 0 0 1   0 0 0 0 0.244016768  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="京智_搜索结果页面标签" transform="translate(-664.000000, -632.000000)">
+            <g id="编组-7" transform="translate(250.000000, 150.000000)">
+                <g id="编组-5备份" transform="translate(56.000000, 462.000000)">
+                    <g id="编组-28" transform="translate(358.000000, 20.000000)">
+                        <g id="编组-10" transform="translate(4.000000, 0.000000)">
+                            <path d="M57.5604898,0.527696527 L57.5604898,25.4907089 L16.0676769,25.4907089 L5.65044225,13.0030303 L16.0678273,0.527696527 L57.5604898,0.527696527 Z" id="矩形" stroke="url(#linearGradient-2)" fill="url(#linearGradient-1)"></path>
+                            <polygon id="矩形" fill="url(#linearGradient-3)" points="28.5524531 1.02769653 57.0604898 1.02769653 57.0604898 24.9907089 28.5524531 24.9907089 18.5524531 13.003191"></polygon>
+                            <path d="M58.0604898,0.0292376793 L10.8334839,0.0292376793 L0,13.0028703 L10.833183,25.9891677 L58.0604898,25.9891677 L58.0604898,0.0292376793 Z M57.0604898,1.02769653 L57.0604898,24.9907089 L11.3017083,24.9907089 L1.30170832,13.003191 L11.3017083,1.02769653 L57.0604898,1.02769653 Z" id="矩形" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>
+                            <g id="路径" fill-rule="nonzero">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#FCFFD5" xlink:href="#path-5"></use>
+                            </g>
+                            <text id="专题" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" fill="#FFFFFF">
+                                <tspan x="20" y="17.979965">专题</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

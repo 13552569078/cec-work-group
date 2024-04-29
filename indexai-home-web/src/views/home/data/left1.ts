@@ -1,0 +1,380 @@
+export const DATA1 = [{
+  "index_name": "评估指数",
+  "index_date_end": "2022-11-25",
+  "index_date": "2022-11下旬",
+  "riqi": "2022Q4",
+  "index_value": 100.77
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2022-12-10",
+  "index_date": "2022-12上旬",
+  "riqi": "2022Q4",
+  "index_value": 100.83
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2022-12-20",
+  "index_date": "2022-12中旬",
+  "riqi": "2022Q4",
+  "index_value": 100.71
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2022-12-25",
+  "index_date": "2022-12下旬",
+  "riqi": "2022Q4",
+  "index_value": 100.71,
+  "index_name2": "GDP当季同比增速",
+  "index_date2": "2022Q4",
+  "unit_name2": "%",
+  "index_value2": 1.93
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2022-12-25",
+  "index_date": "2022-12下旬",
+  "riqi": "2022Q4",
+  "index_value": 100.71,
+  "index_name2": "GDP当季同比增速",
+  "index_date2": "2022Q4",
+  "unit_name2": "%",
+  "index_value2": 0.51
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-01-10",
+  "index_date": "2023-01上旬",
+  "riqi": "2023Q1",
+  "index_value": 101.77
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-01-20",
+  "index_date": "2023-01中旬",
+  "riqi": "2023Q1",
+  "index_value": 101.63
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-01-25",
+  "index_date": "2023-01下旬",
+  "riqi": "2023Q1",
+  "index_value": 101.28
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-02-10",
+  "index_date": "2023-02上旬",
+  "riqi": "2023Q1",
+  "index_value": 103.23
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-02-20",
+  "index_date": "2023-02中旬",
+  "riqi": "2023Q1",
+  "index_value": 103.34
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-02-25",
+  "index_date": "2023-02下旬",
+  "riqi": "2023Q1",
+  "index_value": 103.90
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-03-10",
+  "index_date": "2023-03上旬",
+  "riqi": "2023Q1",
+  "index_value": 103.80
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-03-20",
+  "index_date": "2023-03中旬",
+  "riqi": "2023Q1",
+  "index_value": 104.00
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-03-25",
+  "index_date": "2023-03下旬",
+  "riqi": "2023Q1",
+  "index_value": 104.00,
+  "index_name2": "GDP当季同比增速",
+  "index_date2": "2023Q1",
+  "unit_name2": "%",
+  "index_value2": 6.10
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-03-25",
+  "index_date": "2023-03下旬",
+  "riqi": "2023Q1",
+  "index_value": 104.00,
+  "index_name2": "GDP当季同比增速",
+  "index_date2": "2023Q1",
+  "unit_name2": "%",
+  "index_value2": 3.10
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-04-10",
+  "index_date": "2023-04上旬",
+  "riqi": "2023Q2",
+  "index_value": 104.40
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-04-20",
+  "index_date": "2023-04中旬",
+  "riqi": "2023Q2",
+  "index_value": 104.90
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-04-25",
+  "index_date": "2023-04下旬",
+  "riqi": "2023Q2",
+  "index_value": 105.20
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-05-10",
+  "index_date": "2023-05上旬",
+  "riqi": "2023Q2",
+  "index_value": 105.80
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-05-20",
+  "index_date": "2023-05中旬",
+  "riqi": "2023Q2",
+  "index_value": 106.30
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-05-25",
+  "index_date": "2023-05下旬",
+  "riqi": "2023Q2",
+  "index_value": 106.20
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-06-10",
+  "index_date": "2023-06上旬",
+  "riqi": "2023Q2",
+  "index_value": 106.20
+}, {
+  "index_name": "评估指数",
+  "index_date_end": "2023-06-20",
+  "index_date": "2023-06中旬",
+  "riqi": "2023Q2",
+  "index_value": 106.60
+}]
+
+export const DATA2 = [{
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110115403",
+  "data_name": "经开区",
+  "data_value": 538.40,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "经开区",
+  "data_value2": -4.30
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110119",
+  "data_name": "延庆区",
+  "data_value": 48.50,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "延庆区",
+  "data_value2": 5.60
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110118",
+  "data_name": "密云区",
+  "data_value": 89.30,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "密云区",
+  "data_value2": 3.00
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110117",
+  "data_name": "平谷区",
+  "data_value": 95.20,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "平谷区",
+  "data_value2": 7.10
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110116",
+  "data_name": "怀柔区",
+  "data_value": 111.50,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "怀柔区",
+  "data_value2": 3.70
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110115",
+  "data_name": "大兴区",
+  "data_value": 241.60,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "大兴区",
+  "data_value2": -14.30
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110114",
+  "data_name": "昌平区",
+  "data_value": 318.90,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "昌平区",
+  "data_value2": 6.10
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110113",
+  "data_name": "顺义区",
+  "data_value": 439.10,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "顺义区",
+  "data_value2": 4.50
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110112",
+  "data_name": "通州区",
+  "data_value": 262.90,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "通州区",
+  "data_value2": 2.80
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110111",
+  "data_name": "房山区",
+  "data_value": 181.40,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "房山区",
+  "data_value2": 4.60
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110109",
+  "data_name": "门头沟区",
+  "data_value": 59.90,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "门头沟区",
+  "data_value2": 5.50
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110107",
+  "data_name": "石景山区",
+  "data_value": 231.40,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "石景山区",
+  "data_value2": 3.00
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110106",
+  "data_name": "丰台区",
+  "data_value": 505.30,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "丰台区",
+  "data_value2": 4.70
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110108",
+  "data_name": "海淀区",
+  "data_value": 2557.60,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "海淀区",
+  "data_value2": 4.30
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110105",
+  "data_name": "朝阳区",
+  "data_value": 1945.90,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "朝阳区",
+  "data_value2": 3.00
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110102",
+  "data_name": "西城区",
+  "data_value": 1332.10,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "西城区",
+  "data_value2": 4.00
+}, {
+  "index_name": "GDP",
+  "index_date_end": "2023-03-31",
+  "index_date": "2023Q1",
+  "legend_name": "累计值",
+  "unit_name": "亿元",
+  "data_id": "110101",
+  "data_name": "东城区",
+  "data_value": 840.20,
+  "legend_name2": "累计同比增速",
+  "unit_name2": "%",
+  "data_name2": "东城区",
+  "data_value2": 5.60
+}]
+
+export const DATA3 = []

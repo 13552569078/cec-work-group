@@ -1,0 +1,63 @@
+// 通用的 mixin
+// 详情页面的2, 3列布局
+
+.details-content-layout_wrapper {
+  .content-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #8a8a8a;
+  }
+  .content-value {
+    display: block;
+    font-size: 14px;
+    color: #4B4B4B;
+    word-break:break-all;
+    word-wrap:break-word;
+    line-height: 20px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+  }
+  // .content-value.textarea {
+  //   // max-width: 600px;
+  //   // width: calc(100% / 2);
+  //   // max-height: 80px;
+  //   // overflow-y: auto;
+  // }
+  .details-content-layout_column_box {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    .details-content-layout_column_box_item, .details-content-layout_column_box_item-1, .details-content-layout_column_box_item-3 {
+      box-sizing: border-box;
+      margin-top: 20px;
+      padding-right: 24px;
+      width: calc(100% / 2);
+    }
+    .details-content-layout_column_box_item-1 {
+      width: 100%;
+    }
+    .details-content-layout_column_box_item-3 {
+      width: calc(100% / 3);
+    }
+  }
+  .details-content-layout_line {
+    width: 100%;
+    border-top: 1px solid #EDEDED;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .details-content-layout_column_box_3-2 {
+    width: calc(200% / 3) !important;
+  }
+}
+
+@media screen and (min-width: 1574px) {
+  .details-content-layout_wrapper {
+    .details-content-layout_column_box {
+      width: calc(200% / 3);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="40px" viewBox="0 0 86 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>返回</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#207EB3" offset="0%"></stop>
+            <stop stop-color="#023755" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#50B9ED" offset="0%"></stop>
+            <stop stop-color="#1C80AB" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,0 L66,0 C77.045695,-2.02906125e-15 86,8.954305 86,20 C86,31.045695 77.045695,40 66,40 L0,40 L0,40 L0,0 Z" id="path-3"></path>
+        <filter x="-5.8%" y="-12.5%" width="111.6%" height="125.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.204477163 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="-1.66533454e-14%" y1="-2.48949813e-15%" x2="1.11022302e-14%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#00E8FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-7.1%" y="-7.1%" width="114.3%" height="114.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0.333333333" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="京智_智慧城市指数下钻0703" transform="translate(-301.000000, -120.000000)">
+            <g id="编组-7" transform="translate(301.000000, 108.000000)">
+                <g id="返回" transform="translate(0.000000, 12.000000)">
+                    <g id="矩形">
+                        <use fill-opacity="0.32" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <path stroke="url(#linearGradient-2)" stroke-width="1" d="M66,0.5 C71.3847763,0.5 76.2597763,2.68261184 79.7885822,6.21141777 C83.3173882,9.74022369 85.5,14.6152237 85.5,20 C85.5,25.3847763 83.3173882,30.2597763 79.7885822,33.7885822 C76.2597763,37.3173882 71.3847763,39.5 66,39.5 L66,39.5 L0.5,39.5 L0.5,0.5 Z" stroke-linejoin="square"></path>
+                    </g>
+                    <g id="编组" transform="translate(12.000000, 13.000000)" fill="url(#linearGradient-5)">
+                        <path d="M5.63271299,11.5606521 C5.63276956,11.7607893 5.54386372,11.9425526 5.40523955,12.0257096 C5.26661539,12.1088666 5.10378611,12.0781126 4.98862648,11.9470227 L0.134432485,6.42233156 C0.0490558292,6.32525584 0,6.18426513 0,6.03596093 C0,5.88765673 0.0490558292,5.74666602 0.134432485,5.6495903 L4.98862648,0.124899139 C5.10378611,-0.00619074797 5.26661539,-0.0369447873 5.40523955,0.0462122183 C5.54386372,0.129369224 5.63276956,0.311132572 5.63271299,0.51126977 L5.63271299,3.22506348 L7.77318176,3.22506348 C11.1710786,3.22506348 13.9338401,6.79950289 13.9988325,11.2412319 L14,11.4022197 C14,12.3103951 13.8871389,13.1843287 13.6793189,14 C12.8869562,11 10.7161317,8.84685837 8.1623579,8.84685837 L5.63271299,8.84685837 L5.63271299,11.5606521 Z" id="路径" filter="url(#filter-6)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

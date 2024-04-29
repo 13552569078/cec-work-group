@@ -1,0 +1,189 @@
+@import '@/styles/variables.scss';
+.operate-icon {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  vertical-align: top;
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $primaryColor;
+}
+i[class*="operate-icon-"], span[class*="operate-icon-"] {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.operate-icon-add::before {
+  content: "\e75d";
+}
+.operate-icon-copy::before {
+  content: "\e6d0";
+}
+.operate-icon-register::before {
+  content: "\e6d1";
+}
+.operate-icon-push-on::before {
+  content: "\e77a";
+}
+.operate-icon-push-off::before {
+  content: "\e77b";
+}
+
+.operate-icon-subscribe-on::before {
+  content: "\e772";
+}
+.operate-icon-subscribe-off::before {
+  content: "\e771";
+}
+
+
+.operate-icon-all::before {
+  content: "\e635";
+}
+.operate-icon-complete::before {
+  content: "\e75f";
+}
+.operate-icon-setting::before {
+  content: "\e76b";
+}
+
+.operate-icon-apply::before {
+  content: "\e64b";
+}
+.operate-icon-view::before {
+  content: "\e635";
+}
+.operate-icon-edit::before {
+  content: "\e64c";
+}
+.operate-icon-delete::before {
+  content: "\e762";
+}
+.operate-icon-sendreport::before {
+  content: "\e641";
+}
+.operate-icon-download::before {
+  content: "\e75b";
+}
+.operate-icon-run::before {
+  content: "\e65a";
+}
+.operate-icon-enable::before {
+  content: "\e75f";
+}
+.operate-icon-stop::before{
+  content: "\e760";
+}
+.operate-icon-more::before {
+  content: "\e761";
+}
+.operate-icon-accessory::before {
+  content: "\e69c";
+}
+.operate-icon-info::before {
+  content: "\e673";
+}
+.operate-icon-statistics {
+  background: url('~@/assets/svg/statistic.svg');
+}
+.operate-icon-filter {
+  background: url('~@/assets/svg/filter.svg');
+}
+.operate-icon-union {
+  background: url('~@/assets/svg/union.svg');
+}
+.operate-icon-inter {
+  background: url('~@/assets/svg/inter.svg');
+}
+.operate-icon-diff {
+  background: url('~@/assets/svg/diff.svg');
+}
+.operate-icon-concat {
+  background: url('~@/assets/svg/concat.svg');
+}
+.operate-icon-top {
+  background: url('~@/assets/svg/top.svg');
+}
+.operate-icon-complement {
+  background: url('~@/assets/svg/complement.svg');
+}
+.operate-icon-customize {
+  background: url('~@/assets/svg/customize.svg');
+}
+.operate-icon-math {
+  background: url('~@/assets/svg/math.svg');
+}
+.operate-icon-distinct {
+  background: url('~@/assets/svg/distinct.svg');
+}
+.operate-icon-pseudo-code {
+  background: url('~@/assets/svg/pseudo-code.svg');
+}
+.operate-icon-history-result::before{
+  content: "\e64a";
+}
+.operate-icon-data-view {
+  background: url('~@/assets/svg/data-view.svg');
+}
+.operate-icon-create-report {
+  background: url('~@/assets/svg/create-report.svg');
+}
+.operate-icon-export {
+  background: url('~@/assets/svg/export.svg');
+}
+.operate-icon-file {
+  background: url('~@/assets/svg/file.svg');
+}
+.operate-icon-failure {
+  background: url('~@/assets/svg/importance.svg');
+}
+.operate-icon-success {
+  background: url('~@/assets/svg/success.svg');
+}
+.operate-icon-lose-efficacy {
+  background: url('~@/assets/svg/lose-efficacy.svg');
+}
+.operate-icon-arithmetic {
+  background: url('~@/assets/svg/icon-arithmetic.svg');
+}
+.operate-icon-view-report {
+  background: url('~@/assets/svg/view-report.svg');
+}
+.operate-icon-view-template {
+  background: url('~@/assets/svg/view-template.svg');
+}
+
+/* 表格新建按钮 */
+.theme-create-btn {
+  position: relative;
+  padding: 0 0 0 20px;
+  line-height: 52px;
+  font-size: 14px;
+  color: #404040;
+  cursor: pointer;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+  }
+  img:nth-of-type(2) {
+    display: none;
+  }
+  &:hover {
+    color: $primaryColor;
+    img:nth-of-type(1) {
+      display: none;
+    }
+    img:nth-of-type(2) {
+      display: inline-block;
+    }
+  }
+}

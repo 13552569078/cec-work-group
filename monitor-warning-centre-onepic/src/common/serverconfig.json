@@ -1,0 +1,6 @@
+{
+  "API_PREFIX": "",
+  "API_DOMAIN": "http://swan-gateway-xixian-dev.k8s.etcc.group/smartcity-company/",
+  "API_ORIGIN": "http://swan-gateway-xixian-dev.k8s.etcc.group",
+  "API_SWAN": "/swan-ucenter"
+}

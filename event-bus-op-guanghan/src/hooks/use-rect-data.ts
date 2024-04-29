@@ -1,0 +1,210 @@
+import { ref, reactive, computed } from 'vue';
+import { apiRectDataObj as api} from '@/apis';
+import { IgetRectDataSpace, IgetRectManagerDataSpace } from '@/apis/modules/rect-data/model';
+import { RECT_TYPE } from '@/common';
+import { EmptyUtils } from 'fx-front-utils';
+
+const currentBigRectParams = reactive({
+  wglx: '', // 网格类型
+  wgbm: '', // 网格编码
+  wgmc: '', // 网格名称
+  sszjd: '', // 街道
+})
+
+const currentMidRectParams = reactive({
+  wglx: '', // 网格类型
+  wgbm: '', // 网格编码
+  wgmc: '', // 网格名称
+  sszjd: '', // 街道
+})
+
+const nextRectParams = reactive({
+  wglx: '', // 网格类型
+  wgbm: '', // 网格编
+  wgmc: '' // 网格名称
+})
+
+const currentHoverRect = reactive({
+  bigWgbm: '',
+  midWgbm: ''
+})
+
+const rectManagerData = ref(); 
+
+const bigRectData = ref<IgetRectDataSpace.RectData[]>([]);
+const midRectData = ref<IgetRectDataSpace.RectData[]>([]);
+
+function useRectData () {
+
+  const rectBigColor = {
+    normal: {
+      fillColor: 'rgba(13, 255, 248, 0.6)',
+      outlineColor: 'rgba(255, 255, 255, 1)'
+    },
+    hover: {
+      fillColor: 'rgba(13, 255, 248, 0.9)',
+      outlineColor: 'rgba(0, 0, 0, 1)'
+    }
+  }
+
+  const rectMidColor = {
+    normal: {
+      fillColor: 'rgba(214, 211, 52, 0.6)',
+      outlineColor: 'rgba(255, 253, 13, 1)'
+    },
+    hover: {
+      fillColor: 'rgba(214, 211, 52, 0.9)',
+      outlineColor: 'rgba(0, 0, 0, 1)'
+    }
+  }
+
+  const rectDataWrapper = (data: IgetRectDataSpace.RectData[], currentWgbm?: string) => {
+    return data.map((rect: IgetRectDataSpace.RectData) => {
+      let fillColor = '';
+      let outlineColor = '';
+      if (rect.wglx === RECT_TYPE.BIG ) {
+        if (currentWgbm === rect.wgbm || currentBigRectParams.wgbm === rect.wgbm) {
+          fillColor = rectBigColor.hover.fillColor;
+          outlineColor = rectBigColor.hover.outlineColor;
+        } else {
+          fillColor = rectBigColor.normal.fillColor;
+          outlineColor = rectBigColor.normal.outlineColor;
+        }
+      }
+      if (rect.wglx === RECT_TYPE.MID ) {
+        if (currentWgbm === rect.wgbm || currentMidRectParams.wgbm === rect.wgbm) {
+          fillColor = rectMidColor.hover.fillColor;
+          outlineColor = rectMidColor.hover.outlineColor;
+        } else {
+          fillColor = rectMidColor.normal.fillColor;
+          outlineColor = rectMidColor.normal.outlineColor;
+        }
+      }
+      return {
+        coordinates: JSON.parse(rect.bjdw),
+        properties: {
+          wgbm: rect.wgbm,
+          wgmc: rect.wgmc,
+          wglx: rect.wglx,
+          sszjd: rect.sszjd,
+          fillColor,
+          outlineColor
+        }
+      }
+    }) 
+  }
+
+  const mapBigRectData = computed(() => {
+    return rectDataWrapper(bigRectData.value, currentHoverRect.bigWgbm)
+  })
+
+  const mapMidRectData = computed(() => {
+    return rectDataWrapper(midRectData.value, currentHoverRect.midWgbm)
+  })
+
+  const rectManagerList = computed(() => {
+    return rectManagerData.value ? EmptyUtils.formatData(rectManagerData.value.list) : []
+  })
+
+  // 获取网格员信息
+  const getRectManagerData = async (pageNum: number) => {
+    const res = await api.getRectManagerData({
+      pageNum,
+      ...(currentMidRectParams.wglx ? currentMidRectParams : currentBigRectParams),
+      pageSize: 10
+    });
+    rectManagerData.value = res.data;
+    return res.data;
+  }
+
+  // 获取网格信息
+  const getRectData = async () => {
+    const res = await api.getRectData({
+      ...nextRectParams
+    })
+    if (bigRectData.value.length === 0) {
+      bigRectData.value = res.data;
+    } else {
+      midRectData.value = res.data;
+    }
+  }
+
+  const clearMidRectData = () => {
+    midRectData.value = []
+  }
+
+  const setCurrentBigRectParams = (params: IgetRectDataSpace.RequestParams) => {
+    currentBigRectParams.wgbm = params.wgbm as string;
+    currentBigRectParams.wglx = params.wglx as string;
+    currentBigRectParams.wgmc = params.wgmc as string;
+    currentBigRectParams.sszjd = params.sszjd as string;
+  }
+
+  const setCurrentMidRectParams = (params: IgetRectDataSpace.RequestParams) => {
+    currentMidRectParams.wgbm = params.wgbm as string;
+    currentMidRectParams.wglx = params.wglx as string;
+    currentMidRectParams.wgmc = params.wgmc as string;
+    currentMidRectParams.sszjd = params.sszjd as string;
+  }
+
+  const clearCurrentBigRectParams = () => {
+    currentBigRectParams.wgbm = '';
+    currentBigRectParams.wglx = '';
+    currentBigRectParams.wgmc = '';
+    currentBigRectParams.sszjd = '';
+  }
+
+  const clearCurrentMidRectParams = () => {
+    currentMidRectParams.wgbm = '';
+    currentMidRectParams.wglx = '';
+    currentMidRectParams.wgmc = '';
+    currentMidRectParams.sszjd = '';
+  }
+
+  const setNextRectParams = (params: IgetRectDataSpace.RequestParams) => {
+    nextRectParams.wgbm = params.wgbm as string;
+    nextRectParams.wglx = params.wglx as string;
+    nextRectParams.wgmc = params.wgmc as string;
+  }
+
+  const resetRectMap = () => {
+    clearMidRectData();
+    clearCurrentBigRectParams();
+    clearCurrentMidRectParams();
+  }
+
+  const handleRectHover = (rect: any) => {
+    if (rect.properties.wglx === RECT_TYPE.BIG) {
+      currentHoverRect.bigWgbm = rect.properties.wgbm
+    } else {
+      currentHoverRect.midWgbm = rect.properties.wgbm
+    }
+  }
+
+  const handleClearHover = () => {
+    currentHoverRect.bigWgbm = '';
+    currentHoverRect.midWgbm = '';
+  }
+
+  return {
+    mapBigRectData,
+    mapMidRectData,
+    getRectData,
+    rectManagerData,
+    rectManagerList,
+    currentBigRectParams,
+    currentMidRectParams,
+    getRectManagerData,
+    setCurrentBigRectParams,
+    setCurrentMidRectParams,
+    clearCurrentMidRectParams,
+    clearCurrentBigRectParams,
+    setNextRectParams,
+    resetRectMap,
+    currentHoverRect,
+    handleRectHover,
+    handleClearHover
+  }
+}
+
+export { useRectData };

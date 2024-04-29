@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>收起</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页全" transform="translate(-224.000000, -96.000000)">
+            <g id="sidemenu" transform="translate(0.000000, 72.000000)">
+                <g id="收起" transform="translate(224.000000, 24.000000)">
+                    <rect id="矩形" fill-opacity="0.01" fill="#4B4B4B" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M7.58215513,2.011 L8.72515513,3.13 L4.62415513,7.23 L10.6357207,7.2303468 L10.6357207,8.8303468 L4.76415513,8.83 L8.75415513,12.82 L7.63915513,13.968 L1.63215513,7.96066667 L7.58215513,2.011 Z M14.2539995,2.011 L14.2539995,13.968 L12.6539995,13.968 L12.6539995,2.011 L14.2539995,2.011 Z" id="形状结合" fill="#36A4FF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="3.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="公共切图" transform="translate(-88.000000, -859.000000)">
+            <g id="icon/back备份" transform="translate(88.000000, 859.000000)">
+                <g id="icon/back">
+                    <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M12.7507168,10.7512125 C12.4582899,11.0483052 11.9960675,11.0799109 11.6675853,10.8428265 L11.5586755,10.7489801 L11.5586755,10.7489801 L8.00319274,7.10945022 L4.46532603,10.7198635 C4.13594132,11.0560025 3.59510591,11.0633792 3.25657789,10.7363502 C2.9518775,10.4419998 2.91772254,9.97496927 3.15861055,9.64202273 L3.24473532,9.5407847 L3.24473532,9.5407847 L7.57557601,5.1888728 C7.79673755,4.96663522 8.1416843,4.94030992 8.39215308,5.1110089 L8.48905453,5.19210279 L8.48905453,5.19210279 L12.7517074,9.53685026 C13.0831489,9.874675 13.082709,10.4139231 12.7507168,10.7512125 Z" id="路径" fill="#BDBDBD" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

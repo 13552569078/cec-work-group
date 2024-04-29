@@ -1,0 +1,41 @@
+<template>
+  <div>
+    <router-view v-if="$route.meta.menuType === 'details'" />
+    <meeting-common-list
+      v-else
+      event-type="myMeeting"
+    >
+      <template v-slot="{ row }">
+        <span class="action-btn" @click="_showInfo(row)">查看</span>
+      </template>
+    </meeting-common-list>
+  </div>
+</template>
+
+<script>
+import meetingCommonList from '../components/meetingCommonList.vue'
+import { EVENT_TYPE_ENUM } from '@/views/event/components/eventTypeEnum'
+
+export default {
+  name: 'FilterEvent',
+  components: {
+    meetingCommonList
+  },
+  data() {
+    return {
+      EVENT_TYPE_ENUM
+    }
+  },
+  methods: {
+    // 事件过滤详情
+    _showInfo(row) {
+      this.$router.push({
+        path: '/joint-conference/my-meeting/info',
+        query: {
+          id: row.eventId
+        }
+      })
+    }
+  }
+}
+</script>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>一标n实hover</title>
+    <g id="一标n实hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.5,0 L13.9951905,3.75 L13.9951905,11.25 L7.5,15 L1.00480947,11.25 L1.00480947,3.75 L7.5,0 Z M2.40380947,5.425 L2.404,10.441 L6.80780947,12.983 L6.80780947,7.908 L2.40380947,5.425 Z M12.5948095,5.43 L8.20780947,7.908 L8.20780947,12.974 L12.595,10.441 L12.5948095,5.43 Z M7.5,1.616 L3.05180947,4.184 L7.508,6.696 L11.9498095,4.186 L7.5,1.616 Z" id="形状结合" fill="#36A4FF" fill-rule="nonzero"></path>
+        <polygon id="路径-13" fill="#36A4FF" points="8.98534584 8.48452153 11.8602467 6.88122811 11.8602467 10.1158604 8.98534584 11.7993522"></polygon>
+    </g>
+</svg>

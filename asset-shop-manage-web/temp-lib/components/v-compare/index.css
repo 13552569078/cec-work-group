@@ -1,0 +1,40 @@
+/**
+ * @Description:
+ * @Author: wyh19
+ * @Date: 2021-04-08
+ */
+.v-compare-pop {
+  position: absolute;
+  top: 2px;
+  right: -26px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url("./compare-pop.png");
+  background-size: contain;
+}
+
+.v-compare-tip {
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  min-width: 60px;
+  height: 32px;
+  line-height: 32px;
+  transform: translate(-50%, 0);
+  text-align: center;
+  background: #404040;
+  color: #fff;
+  border-radius: 2px;
+  user-select: none;
+}
+.v-compare-tip::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  background: #404040;
+}

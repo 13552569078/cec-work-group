@@ -1,0 +1,119 @@
+[{
+	"resourceName": "菜单",
+	"resourceType": "menuHead",
+	"resourceId": "caidan0001",
+	"menuItems": [
+		{
+			"menuTitle": "概览",
+			"menuId": "home",
+			"resourceType": "menu"
+		},
+		{
+			"menuTitle": "应用场景管理",
+			"menuId": "applicationManagement",
+			"resourceType": "menu",
+			"permissions": ["view", "copy", "pack","public", "user_public","design","user_design",  "deploy","user_deploy", "deployCancel","user_deployCancel", "delete","user_delete", "preview", "link",  "appEdit","user_appEdit",  "appSelectAsset","user_appSelectAsset","back","user_back",     "appAssetView", "appAssetEdit", "user_appAssetEdit","appAssetDesign","user_appAssetDesign",  "appAssetCopy","appAssetDelete", "user_appAssetDelete", "import", "add"]
+		},
+		{
+			"menuTitle": "组件资源开发",
+			"menuId": "assetManagement",
+			"resourceType": "catalogue",
+			"subMenus": [
+				{
+					"menuTitle": "流程资源",
+					"menuId": "flowAsset",
+					"resourceType": "menu",
+					"permissions": ["view","edit", "user_edit", "design","user_design", "copy", "pack", "public","user_public",  "delete","user_delete", "copyAsset", "add", "share","user_share"]
+				},
+				{
+					"menuTitle": "对象资源",
+					"menuId": "objectAsset",
+					"resourceType": "menu",
+					"subMenus": [{
+						"menuTitle": "实体对象",
+						"menuId": "objectAssetEntity",
+						"resourceType": "tab",
+						"permissions": ["view","edit", "user_edit", "design","user_design", "copy", "pack", "public","user_public",  "delete","user_delete", "copyAsset", "add", "share","user_share"]
+						}]
+				},
+				{
+					"menuTitle": "数据资源",
+					"menuId": "statisticsAsset",
+					"resourceType": "menu",
+					"subMenus": [{
+						"menuTitle": "体征资源",
+						"menuId": "tiAsset",
+						"resourceType": "tab",
+						"permissions": ["view","edit", "user_edit", "design","user_design",  "public","user_public",  "delete","user_delete",  "add", "share","user_share"]
+						}
+          ]
+				},
+				{
+					"menuTitle": "技术资源",
+					"menuId": "technologyAsset",
+					"resourceType": "menu",
+					"subMenus": [{
+						"menuTitle": "接口资源",
+						"menuId": "interfaceAsset",
+						"resourceType": "tab",
+						"permissions": ["view","edit", "user_edit", "design","user_design",  "public","user_public",  "delete","user_delete",  "add", "share","user_share"]
+					}, {
+						"menuTitle": "页面资源",
+						"menuId": "pageAsset",
+						"resourceType": "tab",
+						"permissions": ["view","edit", "user_edit", "design","user_design", "copy", "pack", "public","user_public",  "delete","user_delete", "copyAsset", "add", "share","user_share"]
+					}, {
+						"menuTitle": "脚本资源",
+						"menuId": "script",
+						"resourceType": "tab",
+						"permissions": ["view","edit", "user_edit", "design","user_design", "copy", "pack", "public","user_public",  "delete","user_delete", "copyAsset", "add", "share","user_share"]
+					}]
+				},
+				{
+					"menuTitle": "模型资源",
+					"menuId": "modelAsset",
+					"resourceType": "menu",
+					"permissions": ["view","edit", "user_edit", "design","user_design",  "public","user_public",  "delete","user_delete",  "add", "share","user_share"]
+				}
+			]
+		},
+		{
+			"menuTitle": "公共资源库",
+			"menuId": "commonAsset",
+			"resourceType": "menu",
+			"permissions": ["view", "copy"]
+		},
+		{
+			"menuTitle": "我的下载",
+			"menuId": "downloadManagement",
+			"resourceType": "catalogue",
+			"subMenus": [{
+				"menuTitle": "资源",
+				"menuId": "assetDownload",
+				"resourceType": "menu",
+				"permissions": ["view"]
+			}, {
+				"menuTitle": "应用",
+				"menuId": "appDownload",
+				"resourceType": "menu",
+				"permissions": ["view"]
+			}]
+		},
+		{
+			"menuTitle": "我的订阅",
+			"menuId": "assetSubscription",
+			"resourceType": "menu",
+			"permissions": ["view", "showAuth", "showCited","showLog"]
+		},
+		{
+			"menuTitle": "场景管理",
+			"menuId": "sceneManagement",
+			"resourceType": "menu"
+		},
+		{
+			"menuTitle": "数字资源服务门户",
+			"menuId": "serverHome",
+			"resourceType": "menu"
+		}
+	]
+}]

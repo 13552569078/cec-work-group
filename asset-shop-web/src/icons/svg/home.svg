@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="指标中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="灰色主题01" transform="translate(-24.000000, -95.000000)">
+            <g id="sidemenu" transform="translate(0.000000, 72.000000)">
+                <g id="返回首页">
+                    <g id="icon" transform="translate(24.000000, 23.000000)">
+                        <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="20" height="20"></rect>
+                        <path d="M19.3333333,0.66653161 L19.3333333,15.3240894 L0.66666666,15.3240894 L0.66666666,0.66653161 L19.3333333,0.66653161 Z M13.75,7.5 L6.25,7.5 L6.25,9.5 L13.75,9.5 L13.75,7.5 Z" id="形状结合" fill="#D5E2FB" fill-rule="nonzero"></path>
+                        <path d="M0.66666666,15.3240894 L0.66666666,0.66653161 L19.3333333,0.66653161 L19.3333333,15.3240894 L0.66666666,15.3240894 Z M2.66666666,2.66653161 L2.66666666,13.3240894 L17.3333333,13.3240894 L17.3333333,2.66653161 L2.66666666,2.66653161 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="2.66666666 17.3240894 2.66666666 19.3240894 17.3333333 19.3240894 17.3333333 17.3240894"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

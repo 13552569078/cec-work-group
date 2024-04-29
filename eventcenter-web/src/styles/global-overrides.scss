@@ -1,0 +1,44 @@
+// 表格部分
+::v-deep .el-table--small td {
+  padding: 8px 0 !important;
+}
+::v-deep  .el-table--small th {
+  padding: 8px 0 !important;
+}
+.table-index {
+  color: #BDBDBD !important;
+}
+::v-deep  .el-table--enable-row-hover .el-table__body tr:hover>td{
+  background-color: #F9FAFE !important;
+}
+
+// 弹窗部分
+::v-deep {
+  .el-dialog {
+    .el-dialog__header {
+      padding: 20px 28px 20px 28px;
+      .el-dialog__title {
+        line-height: 24px !important;
+        font-size: 16px;
+        font-weight: 600;
+        color: #4b4b4b;
+      }
+    }
+    
+    .el-button+.el-button, .el-checkbox.is-bordered+.el-checkbox.is-bordered, .el-radio.is-bordered+.el-radio.is-bordered {
+      margin-left: 16px;
+    }
+
+    .footer {
+      .el-button--default {
+        color: #4b4b4b;
+      }
+      .el-button--small {
+        font-size: 14px;
+      }
+      .el-button--primary:active, .el-button--primary:focus {
+        background: linear-gradient(90deg, #7ac1ff 0%, #36a4ff 100%);
+      }
+    }
+  }
+}

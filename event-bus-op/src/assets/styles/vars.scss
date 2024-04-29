@@ -1,0 +1,7 @@
+$panel-width: calc(var(--xxs) * 590 / 4 * 1.05); // 面板宽度
+
+$float-panel-gap: calc(var(--xxs) * 648 / 4); // 浮动面板距版面间距
+$float-panel-gap-bottom: calc(var(--xxs) * (344 - 20)/4); //浮动面板距底部间距-中央协同处置流程展开状态下
+$float-panel-gap-bottom-lower: calc(var(--xxs) * (152 - 20)/4); //浮动面板距底部间距-中央协同处置流程折叠状态下
+
+$footer-gap: s(644); // 页脚距版面间距

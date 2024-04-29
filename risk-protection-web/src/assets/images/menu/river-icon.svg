@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>容器</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="16" height="16"></rect>
+    </defs>
+    <g id="导航" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-24.000000, -416.000000)" id="aside-1">
+            <g transform="translate(0.000000, 56.000000)">
+                <g id="容器-148" transform="translate(0.000000, 76.000000)">
+                    <g id="hl-sub-menu-7备份-3" transform="translate(0.000000, 270.000000)">
+                        <g id="容器" transform="translate(24.000000, 14.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g fill-rule="nonzero"></g>
+                            <g id="FillSetting2" mask="url(#mask-2)" fill-rule="nonzero">
+                                <g transform="translate(8.000000, 8.000072) rotate(-0.000037) translate(-8.000000, -8.000072) translate(0.000000, 0.000072)">
+                                    <rect id="FillSetting2" fill="none" x="0" y="0" width="16" height="16"></rect>
+                                    <path d="M1.48307065,11.4039537 C1.48307065,11.4039537 -0.883694233,5.79912041 4.86026814,4.25504325 C8.73909883,3.21231734 8.21054872,2.61422392 7.55300722,2.21080486 C6.28668925,1.43406743 7.42104448,1.00931539 8.4241361,1.0009327 C8.67303007,0.983624815 8.68474067,1.21366748 8.19639113,1.15465615 C7.27876941,1.38625635 7.65158601,2.03343838 8.54211604,2.42492217 C8.91755441,2.59003838 11.2820471,3.97757452 7.79525935,5.21140472 C3.12045737,6.86561185 14.7586973,7.73594139 14.9974537,11.8479912 C15.1023248,13.6543817 11.9575915,15.0621134 7.4500588,14.9978869 C2.76389579,14.9310529 1.48307065,11.4039537 1.48307065,11.4039537 Z" id="路径" fill="currentColor"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

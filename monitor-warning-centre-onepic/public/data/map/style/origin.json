@@ -1,0 +1,2622 @@
+{
+    "sources": {
+      "lixia": {
+        "tiles": [
+          "http://10.25.10.84:8090/iserver/services/map-mvt-lixia/rest/maps/lixia/tileFeature.mvt?returnAttributes=true&width=512&height=512&viewBounds={bbox-epsg-3857}"
+        ],
+        "bounds": [
+          108.49225581600007,
+          34.16903781413655,
+          108.97371004100006,
+          34.57073970313185
+        ],
+        "type": "vector"
+      }
+    },
+    "center": [
+      108.74517088626374,
+      34.34299138176581
+    ],
+    "name": "lixia",
+    "sprite": "http://10.25.10.84:8090/iserver/services/map-mvt-lixia/rest/maps/lixia/tilefeature/mvtsprites/sprite",
+    "layers": [
+      {
+        "paint": {
+          "background-color": "rgba(255,255,255,1.00)"
+        },
+        "id": "background",
+        "type": "background"
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "五大新区界改动@dataNEW#1#2"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(0,17,39,1.00)",
+          "fill-antialias": true
+        },
+        "id": "五大新区界改动@dataNEW(0_21)",
+        "source": "lixia",
+        "source-layer": "五大新区界改动@dataNEW",
+        "type": "fill",
+        "minzoom": 0
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "TYPE",
+            "1"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "线路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.13,
+          "line-color": "rgba(47,49,139,1.00)"
+        },
+        "id": "线路@dataNEW_unique_1",
+        "source": "lixia",
+        "source-layer": "线路@dataNEW",
+        "type": "line",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "TYPE",
+            "2"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "线路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.13,
+          "line-color": "rgba(237,112,56,1.00)"
+        },
+        "id": "线路@dataNEW_unique_2",
+        "source": "lixia",
+        "source-layer": "线路@dataNEW",
+        "type": "line",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "TYPE",
+            "6"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "线路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.13,
+          "line-color": "rgba(230,33,58,1.00)"
+        },
+        "id": "线路@dataNEW_unique_6",
+        "source": "lixia",
+        "source-layer": "线路@dataNEW",
+        "type": "line",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "TYPE",
+            "7"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "线路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.13,
+          "line-color": "rgba(5,150,89,1.00)"
+        },
+        "id": "线路@dataNEW_unique_7",
+        "source": "lixia",
+        "source-layer": "线路@dataNEW",
+        "type": "line",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "场景面@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(5,152,170,1.00)",
+          "fill-opacity": 0.4,
+          "fill-antialias": true
+        },
+        "id": "场景面@dataNEW(12_21)",
+        "source": "lixia",
+        "source-layer": "场景面@dataNEW",
+        "type": "fill",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "植被@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(5,152,170,1.00)",
+          "fill-antialias": true
+        },
+        "id": "植被@dataNEW(13_21)",
+        "source": "lixia",
+        "source-layer": "植被@dataNEW",
+        "type": "fill",
+        "minzoom": 13
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "水系@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(9,83,150,1.00)",
+          "fill-antialias": true
+        },
+        "id": "水系@dataNEW(10_21)",
+        "source": "lixia",
+        "source-layer": "水系@dataNEW",
+        "type": "fill",
+        "minzoom": 10
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁机场场景面@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(19,108,132,1.00)",
+          "fill-antialias": true
+        },
+        "id": "地铁机场场景面@dataNEW(12_21)",
+        "source": "lixia",
+        "source-layer": "地铁机场场景面@dataNEW",
+        "type": "fill",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "绿化隔离带@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(5,73,20,1.00)",
+          "fill-opacity": 0.9,
+          "fill-antialias": true
+        },
+        "id": "绿化隔离带@dataNEW(16_21)",
+        "source": "lixia",
+        "source-layer": "绿化隔离带@dataNEW",
+        "type": "fill",
+        "minzoom": 16
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "建筑2000@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(8,73,117,1.00)",
+          "fill-opacity": 0.5,
+          "fill-antialias": true
+        },
+        "id": "建筑2000@dataNEW(17_21)",
+        "source": "lixia",
+        "source-layer": "建筑2000@dataNEW",
+        "type": "fill",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "建筑5000@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(14,76,119,1.00)",
+          "fill-opacity": 0.5,
+          "fill-antialias": true
+        },
+        "id": "建筑5000@dataNEW(17_21)",
+        "source": "lixia",
+        "source-layer": "建筑5000@dataNEW",
+        "type": "fill",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "功能面@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(13,89,10,1.00)",
+          "fill-opacity": 0.8,
+          "fill-antialias": true
+        },
+        "id": "功能面@dataNEW(14_21)",
+        "source": "lixia",
+        "source-layer": "功能面@dataNEW",
+        "type": "fill",
+        "minzoom": 14
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "高速道路@dataNEW"
+        },
+        "maxzoom": 16,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "高速道路@dataNEW(10_16)",
+        "source": "lixia",
+        "source-layer": "高速道路@dataNEW",
+        "type": "line",
+        "minzoom": 10
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "国道@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "国道@dataNEW(10_21)",
+        "source": "lixia",
+        "source-layer": "国道@dataNEW",
+        "type": "line",
+        "minzoom": 10
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "省道@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "省道@dataNEW(12_21)",
+        "source": "lixia",
+        "source-layer": "省道@dataNEW",
+        "type": "line",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "县道@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "县道@dataNEW(12_21)",
+        "source": "lixia",
+        "source-layer": "县道@dataNEW",
+        "type": "line",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "城市高速路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "城市高速路@dataNEW(13_21)",
+        "source": "lixia",
+        "source-layer": "城市高速路@dataNEW",
+        "type": "line",
+        "minzoom": 13
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "乡镇村道@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "乡镇村道@dataNEW(13_21)",
+        "source": "lixia",
+        "source-layer": "乡镇村道@dataNEW",
+        "type": "line",
+        "minzoom": 13
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "其它道路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "其它道路@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "其它道路@dataNEW",
+        "type": "line",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "步行道路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "步行道路@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "步行道路@dataNEW",
+        "type": "line",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "非引导道路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.89,
+          "line-color": "rgba(14,35,54,1.00)"
+        },
+        "id": "非引导道路@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "非引导道路@dataNEW",
+        "type": "line",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "面状公路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "fill-color": "rgba(14,35,54,1.00)",
+          "fill-antialias": true
+        },
+        "id": "面状公路@dataNEW(16_21)",
+        "source": "lixia",
+        "source-layer": "面状公路@dataNEW",
+        "type": "fill",
+        "minzoom": 16
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "Name",
+            "地铁1号线"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁轨迹@dataNEW#1#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 2.27,
+          "line-color": "rgba(237,112,56,1.00)"
+        },
+        "id": "地铁轨迹@dataNEW_unique_地铁1号线",
+        "source": "lixia",
+        "source-layer": "地铁轨迹@dataNEW",
+        "type": "line",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "Name",
+            "地铁16号线"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁轨迹@dataNEW#1#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 2.27,
+          "line-color": "rgba(47,49,139,1.00)"
+        },
+        "id": "地铁轨迹@dataNEW_unique_地铁16号线",
+        "source": "lixia",
+        "source-layer": "地铁轨迹@dataNEW",
+        "type": "line",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "Name",
+            "地铁5号线"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁轨迹@dataNEW#1#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 2.27,
+          "line-color": "rgba(230,33,58,1.00)"
+        },
+        "id": "地铁轨迹@dataNEW_unique_地铁5号线",
+        "source": "lixia",
+        "source-layer": "地铁轨迹@dataNEW",
+        "type": "line",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "Name",
+            "地铁机场线"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁轨迹@dataNEW#1#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 2.27,
+          "line-color": "rgba(247,181,81,1.00)"
+        },
+        "id": "地铁轨迹@dataNEW_unique_地铁机场线",
+        "source": "lixia",
+        "source-layer": "地铁轨迹@dataNEW",
+        "type": "line",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "visibility": "visible",
+          "line-cap": "square",
+          "line-join": "round"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "铁路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 4.16,
+          "line-color": "rgba(10,107,119,1.00)"
+        },
+        "id": "铁路@dataNEW_0(11_21)",
+        "source": "lixia",
+        "source-layer": "铁路@dataNEW",
+        "type": "line",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "visibility": "visible",
+          "line-cap": "round",
+          "line-join": "round"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "铁路@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.51,
+          "line-dasharray": [
+            11.25,
+            11.25
+          ],
+          "line-color": "rgba(255,255,255,1.00)"
+        },
+        "id": "铁路@dataNEW_1(11_21)",
+        "source": "lixia",
+        "source-layer": "铁路@dataNEW",
+        "type": "line",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "visibility": "visible",
+          "icon-size": 1,
+          "icon-image": "marker_537_0_BA9916"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁出口@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          
+        },
+        "id": "地铁出口@dataNEW(14_21)",
+        "source": "lixia",
+        "source-layer": "地铁出口@dataNEW",
+        "type": "symbol",
+        "minzoom": 14
+      },
+      {
+        "layout": {
+          "visibility": "visible",
+          "icon-size": 1,
+          "icon-image": "marker_537_4_3B9161"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁A出口@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          
+        },
+        "id": "地铁A出口@dataNEW(12_21)",
+        "source": "lixia",
+        "source-layer": "地铁A出口@dataNEW",
+        "type": "symbol",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "visibility": "visible"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "五大新区界改动_边界@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "line-width": 1.51,
+          "line-color": "rgba(15,163,170,1.00)"
+        },
+        "id": "五大新区界改动_边界@dataNEW(9_21)",
+        "source": "lixia",
+        "source-layer": "五大新区界改动_边界@dataNEW",
+        "type": "line",
+        "minzoom": 9
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{name_new}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 14.7,
+          "text-anchor": "top",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "name_new"
+          ],
+          [
+            "!=",
+            "name_new",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "五大新区界改动_1@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(5,111,117,1.00)",
+          "text-color": "rgba(255,255,255,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "五大新区界改动_1@dataNEW(9_21)",
+        "source": "lixia",
+        "source-layer": "五大新区界改动_1@dataNEW",
+        "type": "symbol",
+        "minzoom": 9
+      },
+      {
+        "layout": {
+          "visibility": "visible",
+          "icon-size": 1,
+          "icon-image": "marker_436_0_808080"
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "车站@dataNEW"
+        },
+        "maxzoom": 17,
+        "paint": {
+          
+        },
+        "id": "车站@dataNEW(16_17)",
+        "source": "lixia",
+        "source-layer": "车站@dataNEW",
+        "type": "symbol",
+        "minzoom": 16
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "viewport",
+          "visibility": "visible",
+          "text-field": "{NAME}",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "icon-size": 1,
+          "symbol-placement": "point",
+          "icon-image": "marker_436_0_808080",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "viewport",
+          "text-ignore-placement": false
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "NAME"
+          ],
+          [
+            "!=",
+            "NAME",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "车站@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(173,126,86,1.00)",
+          "text-translate": [
+            9,
+            0
+          ]
+        },
+        "id": "车站@dataNEW#1(17_21)",
+        "source": "lixia",
+        "source-layer": "车站@dataNEW",
+        "type": "symbol",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "center",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "场景面@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(255,255,255,1.00)",
+          "text-color": "rgba(10,107,119,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "场景面@dataNEW#1(13_21)",
+        "source": "lixia",
+        "source-layer": "场景面@dataNEW_ip",
+        "type": "symbol",
+        "minzoom": 13
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{name}",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "name"
+          ],
+          [
+            "!=",
+            "name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁线_配图@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(234,218,218,1.00)",
+          "text-color": "rgba(10,107,119,1.00)",
+          "text-halo-width": 1
+        },
+        "id": "地铁线_配图@dataNEW(11_21)",
+        "source": "lixia",
+        "source-layer": "地铁线_配图@dataNEW",
+        "type": "symbol",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{RoadName}",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "RoadName"
+          ],
+          [
+            "!=",
+            "RoadName",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "乡镇村道@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(53,128,204,0.00)",
+          "text-color": "rgba(42,90,135,0.00)",
+          "text-halo-width": 1
+        },
+        "id": "乡镇村道@dataNEW#1(16_21)",
+        "source": "lixia",
+        "source-layer": "乡镇村道@dataNEW",
+        "type": "symbol",
+        "minzoom": 16
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{RoadName}",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "RoadName"
+          ],
+          [
+            "!=",
+            "RoadName",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "其它道路@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(42,90,135,0.00)"
+        },
+        "id": "其它道路@dataNEW#1(14_21)",
+        "source": "lixia",
+        "source-layer": "其它道路@dataNEW",
+        "type": "symbol",
+        "minzoom": 14
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "center",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "地铁机场场景面@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(255,255,255,1.00)",
+          "text-color": "rgba(0,89,130,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "地铁机场场景面@dataNEW#1(13_21)",
+        "source": "lixia",
+        "source-layer": "地铁机场场景面@dataNEW_ip",
+        "type": "symbol",
+        "minzoom": 13
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "center",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "乡镇界@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(255,255,255,1.00)",
+          "text-color": "rgba(2,61,69,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "乡镇界@dataNEW(12_21)",
+        "source": "lixia",
+        "source-layer": "乡镇界@dataNEW_ip",
+        "type": "symbol",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{Name}",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "铁路@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(244,232,232,1.00)",
+          "text-color": "rgba(15,90,109,1.00)",
+          "text-halo-width": 1
+        },
+        "id": "铁路@dataNEW#1(11_21)",
+        "source": "lixia",
+        "source-layer": "铁路@dataNEW",
+        "type": "symbol",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{RoadName}",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "RoadName"
+          ],
+          [
+            "!=",
+            "RoadName",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "县道@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(42,90,135,0.00)"
+        },
+        "id": "县道@dataNEW#1(12_21)",
+        "source": "lixia",
+        "source-layer": "县道@dataNEW",
+        "type": "symbol",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{KEY_NAME}",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "KEY_NAME"
+          ],
+          [
+            "!=",
+            "KEY_NAME",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "线路@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(45,194,239,1.00)"
+        },
+        "id": "线路@dataNEW#1(14_21)",
+        "source": "lixia",
+        "source-layer": "线路@dataNEW",
+        "type": "symbol",
+        "minzoom": 14
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{RoadName}",
+          "text-size": 12.48,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "RoadName"
+          ],
+          [
+            "!=",
+            "RoadName",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "高速道路@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(42,90,135,0.00)"
+        },
+        "id": "高速道路@dataNEW#1(11_21)",
+        "source": "lixia",
+        "source-layer": "高速道路@dataNEW",
+        "type": "symbol",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{RoadName}",
+          "text-size": 12.48,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "RoadName"
+          ],
+          [
+            "!=",
+            "RoadName",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "国道@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(42,90,135,0.00)"
+        },
+        "id": "国道@dataNEW#1(11_21)",
+        "source": "lixia",
+        "source-layer": "国道@dataNEW",
+        "type": "symbol",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "icon-rotation-alignment": "map",
+          "visibility": "visible",
+          "text-field": "{RoadName}",
+          "text-size": 12.48,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "symbol-placement": "line",
+          "text-font": [
+            "SimHei"
+          ],
+          "text-rotate": 360,
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-rotation-alignment": "map",
+          "text-keep-upright": true,
+          "text-ignore-placement": false,
+          "text-max-angle": 60
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "has",
+            "RoadName"
+          ],
+          [
+            "!=",
+            "RoadName",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "省道@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(42,90,135,0.00)"
+        },
+        "id": "省道@dataNEW#1(12_21)",
+        "source": "lixia",
+        "source-layer": "省道@dataNEW",
+        "type": "symbol",
+        "minzoom": 12
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 14.7,
+          "text-anchor": "center",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "市界@dataNEW"
+        },
+        "maxzoom": 9,
+        "paint": {
+          "text-halo-color": "rgba(1,91,96,1.00)",
+          "text-color": "rgba(255,255,255,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "市界@dataNEW(0_9)",
+        "source": "lixia",
+        "source-layer": "市界@dataNEW_ip",
+        "type": "symbol",
+        "minzoom": 0
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "center",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "水系@dataNEW#1"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,129,246,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "水系@dataNEW#1(11_21)",
+        "source": "lixia",
+        "source-layer": "水系@dataNEW_ip",
+        "type": "symbol",
+        "minzoom": 11
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "农林牧渔业@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "农林牧渔业@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "农林牧渔业@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "公共设施@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "公共设施@dataNEW(17_21)",
+        "source": "lixia",
+        "source-layer": "公共设施@dataNEW",
+        "type": "symbol",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "卫生、社保@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(5,152,170,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "卫生、社保@dataNEW(16_21)",
+        "source": "lixia",
+        "source-layer": "卫生、社保@dataNEW",
+        "type": "symbol",
+        "minzoom": 16
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.48,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "教育、文化@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(255,255,255,1.00)",
+          "text-color": "rgba(16,122,150,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "教育、文化@dataNEW(15_21)",
+        "source": "lixia",
+        "source-layer": "教育、文化@dataNEW",
+        "type": "symbol",
+        "minzoom": 15
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "商业设施、商务服务@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "商业设施、商务服务@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "商业设施、商务服务@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "汽车销售及服务@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "汽车销售及服务@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "汽车销售及服务@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "交通运输、仓储@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(5,152,170,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "交通运输、仓储@dataNEW(17_21)",
+        "source": "lixia",
+        "source-layer": "交通运输、仓储@dataNEW",
+        "type": "symbol",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "科研及技术服务@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "科研及技术服务@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "科研及技术服务@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "公司企业@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,160,233,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "公司企业@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "公司企业@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.48,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "运动、休闲@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "运动、休闲@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "运动、休闲@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "居民服务@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "居民服务@dataNEW(17_21)",
+        "source": "lixia",
+        "source-layer": "居民服务@dataNEW",
+        "type": "symbol",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "金融、保险@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "金融、保险@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "金融、保险@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "住、宿@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "住、宿@dataNEW(17_21)",
+        "source": "lixia",
+        "source-layer": "住、宿@dataNEW",
+        "type": "symbol",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "餐饮@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "餐饮@dataNEW(18_21)",
+        "source": "lixia",
+        "source-layer": "餐饮@dataNEW",
+        "type": "symbol",
+        "minzoom": 18
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "批发、零售@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-color": "rgba(0,183,239,1.00)",
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "批发、零售@dataNEW(17_21)",
+        "source": "lixia",
+        "source-layer": "批发、零售@dataNEW",
+        "type": "symbol",
+        "minzoom": 17
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.74,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "自然地物地名@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(255,255,255,1.00)",
+          "text-color": "rgba(49,133,155,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "自然地物地名@dataNEW(15_21)",
+        "source": "lixia",
+        "source-layer": "自然地物地名@dataNEW",
+        "type": "symbol",
+        "minzoom": 15
+      },
+      {
+        "layout": {
+          "text-rotate": 360,
+          "visibility": "visible",
+          "text-letter-spacing": 0,
+          "text-justify": "left",
+          "text-field": "{Name}",
+          "text-rotation-alignment": "viewport",
+          "text-size": 12.48,
+          "text-anchor": "left",
+          "text-allow-overlap": false,
+          "text-ignore-placement": false,
+          "symbol-placement": "point",
+          "text-font": [
+            "SimHei"
+          ]
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Point"
+          ],
+          [
+            "has",
+            "Name"
+          ],
+          [
+            "!=",
+            "Name",
+            ""
+          ]
+        ],
+        "metadata": {
+          "layer:caption": "LEVEL2Tpoi@dataNEW"
+        },
+        "maxzoom": 21,
+        "paint": {
+          "text-halo-color": "rgba(255,255,255,1.00)",
+          "text-color": "rgba(17,63,122,1.00)",
+          "text-halo-width": 1,
+          "text-translate": [
+            0,
+            0
+          ]
+        },
+        "id": "LEVEL2Tpoi@dataNEW(14_21)",
+        "source": "lixia",
+        "source-layer": "LEVEL2Tpoi@dataNEW",
+        "type": "symbol",
+        "minzoom": 14
+      }
+    ],
+    "zoom": 9,
+    "glyphs": "http://10.25.10.84:8090/iserver/services/map-mvt-lixia/rest/maps/lixia/tileFeature/sdffonts/{fontstack}/{range}.pbf",
+    "version": 8
+  }

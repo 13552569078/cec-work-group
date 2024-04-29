@@ -1,0 +1,6 @@
+{
+    "TITLE": "常州视频管理",
+    "PROD_PREFIX": "video-list",
+    "BASE_URL_API": "https://onenet.jscz.org.cn:8088/safety/midscr/zdywtg/zdpc",
+    "BASE_URL_VIDEO": "/swes/fx/video"
+}

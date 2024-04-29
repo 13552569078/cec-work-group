@@ -1,0 +1,103 @@
+// 针对组件库的通用覆盖样式文件
+.tab-list-own {
+  background: transparent;
+  padding: 6px 0px 0px;
+    .c-tabs__nav {
+      margin-left: 6px;
+    }
+
+    .c-tabs__header {
+      margin: 0;
+    }
+
+    .c-tabs__nav {
+      display: flex;
+      justify-items: center;
+    }
+
+    .c-tabs__active-bar {
+      display: none !important;
+      width: 0px !important;
+      height: 0px;
+      background: transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 8px solid #36A4FF;
+      border-left: 7px solid transparent;
+      border-top: 0px solid transparent;
+      left: 50%;
+      transform: translateX(-7px) !important;
+    }
+
+    .c-tabs__item {
+      font-size: 20px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #8A8A8A;
+      line-height: 28px !important;
+    }
+
+    .c-tabs__item.is-active {
+      font-weight: 500;
+      color: #4B4B4B;
+      font-size: 20px;
+      line-height: 28px !important;
+      position: relative;
+      &::after{
+        content: ' ';
+        position: absolute;
+        width: 0px !important;
+        height: 0px;
+        background: transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 8px solid #36A4FF;
+        border-left: 7px solid transparent;
+        border-top: 0px solid transparent;
+        left: 50%;
+        bottom: 4px;
+        transform: translateX(-7px) !important;
+      }
+    }
+
+    .c-tabs__content {
+      padding-top: 0px;
+    }
+
+    .c-tabs__nav-wrap::after {
+      height: 0;
+    }
+
+    .c-tabs__item {
+      padding: 0 16px !important;
+    }
+
+}
+
+.message-wrap.c-popover {
+  padding: 0;
+  border-width: 0;
+  border-radius: 0;
+}
+.c-cascader-menu__wrap {
+  height: 225px;
+}
+// 翻页的total和size置左
+.c-pagination.size-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .c-pagination__sizes {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .c-pagination__total {
+    position: absolute;
+    left: 134px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>复选框/已选</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20" rx="2"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录状态" transform="translate(-1015.000000, -563.000000)" fill-rule="nonzero">
+            <g id="编组备份-2" transform="translate(982.000000, 322.000000)">
+                <g id="编组-3" transform="translate(34.000000, 240.000000)">
+                    <g id="复选框/已选" transform="translate(0.000000, 2.000000)">
+                        <g id="矩形备份-2" stroke="#36A4FF">
+                            <rect stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.5" y="0.5" width="19" height="19" rx="2"></rect>
+                            <rect stroke-opacity="0.15" x="-0.5" y="-0.5" width="21" height="21" rx="2"></rect>
+                        </g>
+                        <path d="M15.3543082,7.48393717 L8.52437384,14.0908573 C8.33087458,14.2780383 8.02256586,14.2797068 7.82701585,14.0946312 L4.82331004,11.2518156 C4.38950152,10.8412435 4.34149014,10.1806858 4.68963448,9.71513025 L4.78505842,9.60292794 C5.23398077,9.13711418 5.97888287,9.12015616 6.44891019,9.56504964 L8.15964794,11.1843089 L13.7108179,5.81395842 C14.1400256,5.3987314 14.8077111,5.374407 15.2648578,5.73559695 L15.3747745,5.83420325 C15.8286603,6.29540443 15.8194982,7.03393674 15.3543082,7.48393717 Z" id="路径" fill="#36A4FF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

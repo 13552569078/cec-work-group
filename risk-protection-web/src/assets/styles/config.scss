@@ -1,0 +1,25 @@
+@use "sass:math";
+@use "sass:map";
+
+//+----------------------------------------------------------------------
+// 引入HongLuan.ui Config 全局配置文件
+//+----------------------------------------------------------------------
+@import "../../../node_modules/hongluan-ui/theme/scss/common/config";
+@import '../../../node_modules/@hongluan-ui/styles/2.x/fx/spec/config';
+
+
+//+----------------------------------------------------------------------
+// 组件引导文件
+// 注意它必须在config的后面引入。因为它在样式生成时要读取上面的配置文件
+//+----------------------------------------------------------------------
+@import "../../../node_modules/hongluan-ui/theme/scss/components";                    // 鸿鸾组件引导文件
+@import '../../../node_modules/hongluan-business-ui/theme/scss/components';           // 业务组件引导文件
+@import '../../../node_modules/fx-front-framework/theme/index';                          // 繁星组件引导文件
+
+
+//+----------------------------------------------------------------------
+// HongLuan.pro 专属样式
+//+----------------------------------------------------------------------
+$imgPath: '../../../node_modules/@hongluan-ui/styles/images/';
+@import '../../../node_modules/@hongluan-ui/styles/2.x/fx/themes/pro/index';
+

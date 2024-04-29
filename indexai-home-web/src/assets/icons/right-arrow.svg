@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 14备份 3</title>
+    <defs>
+        <linearGradient x1="20.8348777%" y1="50%" x2="78.7088381%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#A6F0FF" offset="0%"></stop>
+            <stop stop-color="#169CE7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="20.8348777%" y1="50%" x2="78.7088381%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#A6F0FF" offset="0%"></stop>
+            <stop stop-color="#169CE7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="京智_搜索结果页面" transform="translate(-317.000000, -333.000000)" fill-rule="nonzero">
+            <g id="编组-14备份-3" transform="translate(326.485714, 342.000000) rotate(-90.000000) translate(-326.485714, -342.000000) translate(318.000000, 333.000000)">
+                <polygon id="矩形备份-2" fill="url(#linearGradient-1)" transform="translate(8.485714, 6.088235) rotate(-90.000000) translate(-8.485714, -6.088235) " points="14.5739496 -2.39747899 8.89111879 6.08823529 14.5739496 14.5739496 2.39747899 6.0816351"></polygon>
+                <polygon id="矩形备份-3" fill="url(#linearGradient-2)" transform="translate(8.228571, 14.558824) rotate(-90.000000) translate(-8.228571, -14.558824) " points="11.6697479 9.9302521 8.45771311 14.5588235 11.6697479 19.187395 4.78739496 14.5552234"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

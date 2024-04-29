@@ -1,0 +1,118 @@
+@Library('star-devops') _
+
+pipeline {
+    agent { label 'jnlp-slave'}
+    options {
+                timeout(time: 20, unit: 'MINUTES')
+                gitLabConnection('gitlab')
+        }
+    environment {
+        IMAGE_REPO = "10.255.144.14:6000/ioc-prom/analysis-judge-server"
+        IMAGE_CREDENTIAL = "credential-registry"
+        DINGTALK_CREDS = credentials('dingTalk')
+    }
+    stages {
+        stage('checkout') {
+            steps {
+                container('tools') {
+                    checkout scm
+                }
+            }
+        }
+        stage('npm-package') {
+            steps {
+                container('tools') {
+                    script{
+                        echo 'npm Building..'
+                        sh '''
+                        echo "`pwd`"
+                        #source /home/jenkins/.nvm/nvm.sh
+                        #echo $DELETE_node_modules
+                        #if [[ $DELETE_node_modules == "YES" ]];then rm -rf node_modules/;fi
+                        #nvm use v12.18.3
+                        export PATH=/usr/lib/node-v10.16.0-linux-x64-musl-city/bin:$PATH
+                        export NODE_OPTIONS=--max_old_space_size=4096
+                        npm -v
+                        node -v
+                        $INSTALL_CMD
+                        $BUILD_CMD
+                        '''
+                    }
+                }
+            }
+        }
+        stage('CI'){
+            failFast true
+            parallel {
+                stage('Unit Test') {
+                    steps {
+                        echo "Unit Test Stage Skip..."
+                    }
+                }
+                stage('Code Scan') {
+                    steps {
+                        container('tools') {
+                            script {
+                               echo "sonar"
+                            }
+                        }
+                    }
+                }
+
+                stage('sonar scan') {
+                    steps {
+                        container('tools') {
+                            script {
+                                echo 'sonar  scan..'
+                                sh '''
+                                echo ${SONAR_SCAN}
+                                if [ ${SONAR_SCAN} == 'yes' ];then
+                                echo 'sonar scan begin....'
+                                echo $GIT_URL
+                                gitlab_path_tmp=`echo $GIT_URL|awk -F'/' '{print $3":"$4":"$5":"$6":"$7}'`
+                                #echo gitlab_path_tmp
+                                /usr/local/bin/sonar-scanner \
+                                    -Dsonar.projectKey=${gitlab_path_tmp} \
+                                    -Dsonar.projectName=${gitlab_path_tmp} \
+                                    -Dsonar.sources=$WORKSPACE \
+                                    -Dsonar.host.url=http://sonar.cestc.cn:9007 \
+                                    -Dsonar.login=e4bc65b957b264e135d27032a17d4c3b17427c7f \
+                                    -Dsonar.branch.name=$BRANCH \
+                                else
+                                echo 'no need sonar scan...'
+                                fi
+                                '''
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        stage('docker-image') {
+            steps {
+                container('tools') {
+                    script{
+                        devops.docker(
+                            "${CURRENT_IMAGE}",
+                            "${GIT_COMMIT}",
+                            IMAGE_CREDENTIAL,
+                            "${DOCKERFILE}",
+                        ).build().push()
+                    }
+                }
+            }
+        }
+        stage('deploy') {
+            steps {
+                container('tools') {
+                    script{
+                        devops.deploy("manifests",true,"manifests/deployment.yaml").start()
+                    }
+                }
+            }
+        }
+    }
+}
